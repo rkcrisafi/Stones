@@ -12,6 +12,9 @@ describe User do
 
   let(:incomplete_user1) { User.new() }
   let(:incomplete_user2) { User.new(email: 'ben@kristina.com')}
+  let(:incomplete_user3) { User.new(email: 'ben@kristina.com', password: 'pass')}
+  let(:complete_user) { User.new(email: 'ben@kristina.com', password: 'password')}
+
 
   it 'validates presence of email' do
     expect(incomplete_user1).not_to be_valid
@@ -22,7 +25,18 @@ describe User do
 
   it 'validates presence of password_digest' do
     expect(incomplete_user2).not_to be_valid
+    expect(complete_user).to be_valid
   end
+
+  it 'validates length of password' do
+    expect(complete_user).to be_valid
+    expect(incomplete_user3).not_to be_valid
+
+  end
+
+
+
+
 end
 
 
