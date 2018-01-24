@@ -31,10 +31,27 @@ describe User do
   it 'validates length of password' do
     expect(complete_user).to be_valid
     expect(incomplete_user3).not_to be_valid
-
   end
 
+  it 'validates presence of session token' do
+    complete_user.save
+    expect(complete_user.session_token).to_not be_nil
+    # expect(incomplete_user3).not_to be_valid
+  end
 
+  it 'resets session token' do
+    complete_user.save
+    session_token1 = complete_user.session_token
+    complete_user.reset_session_token!
+    session_token2 = User.find_by(email: 'ben@kristina.com')
+    expect(session_token1).to_not eql(session_token2)
+  end
+
+  it 'finds user by credentials' do
+    complete_user.save
+    user_from_db = User.find_by_credentials('ben@kristina.com', 'password')
+    expect(complete_user.email).to eq(user_from_db.email)
+  end
 
 
 end
