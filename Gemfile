@@ -48,6 +48,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'selenium-webdriver'
   gem 'spring'
+  gem 'factory_girl'
 
 end
 
@@ -55,6 +56,7 @@ group :test do
   gem 'faker'
   gem 'guard-rspec'
   gem 'launchy'
+  gem 'shoulda-matchers'
 end
 
 group :development do
