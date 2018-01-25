@@ -25,6 +25,8 @@ class User < ApplicationRecord
     user && BCrypt::Password.new(user.password_digest).is_password?(password) ? user : nil
   end
 
+  
+
 
   attr_reader :password
 
