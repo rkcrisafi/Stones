@@ -28,4 +28,14 @@ RSpec.describe Api::SessionsController, type: :controller do
       end
     end
   end
+  describe 'DELETE #destroy' do
+    it 'logs out user' do
+      user1 #this is here to activate the mock user1
+      post :create, format: :json, params: { user: { email: 'ben@kristina.com', password: 'password' } }
+      delete :destroy, format: :json
+      user = User.find_by(email: 'ben@kristina.com')
+      expect(session[:session_token]).not_to eq(user.session_token)
+      expect(session[:session_token]).to be_nil
+    end
+  end
 end

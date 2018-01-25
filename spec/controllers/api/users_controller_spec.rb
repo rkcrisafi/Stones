@@ -14,18 +14,11 @@ RSpec.describe Api::UsersController, type: :controller do
         expect(response).to render_template('show')
         expect(response).to have_http_status(200)
       end
+      it 'logs in user' do
+        post :create, format: :json, params: { user: { email: 'ben@kristina.com', password: 'password' } }
+        user = User.find_by(email: 'ben@kristina.com')
+        expect(session[:session_token]).to eq(user.session_token)
+      end
     end
   end
 end
-
-
-
-# context 'new listing failure' do
-#   before do
-#     post :create, format: :json, :listing => {address: "123 Testing Lane", listing_type: "shared room", title: "Testing Listing", description: "idk", price: 1000.00, neighborhood_id: nil, host_id: 1}
-#   end
-#
-#   it 'responds with 422' do
-#     expect(response.status).to eq(422)
-#   end
-# end

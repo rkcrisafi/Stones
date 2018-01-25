@@ -5,6 +5,7 @@ class Api::SessionsController < ApplicationController
       params[:user][:password],
     )
     if @user
+      login(@user)
       render 'api/users/show'
     else
       render json: ['invalid credentials'], status: 401
@@ -12,6 +13,7 @@ class Api::SessionsController < ApplicationController
   end
 
   def destroy
-
+    logout
+    render json: 'bye bye balloon'
   end
 end
