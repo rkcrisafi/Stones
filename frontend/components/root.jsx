@@ -6,7 +6,7 @@ const Root = ({ store }) => (
   <div>
     <Provider store={ store }>
       <HashRouter>
-        <div></div>
+        <div>What up</div>
       </HashRouter>
     </Provider>
   </div>
