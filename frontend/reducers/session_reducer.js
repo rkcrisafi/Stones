@@ -1,10 +1,10 @@
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
 
-const SessionReducer = (state = null, action) => {
+const SessionReducer = (state = { currentUser: null }, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_CURRENT_USER:
-      return action.user;
+      return { currentUser: action.user }
     default:
       return state;
   }

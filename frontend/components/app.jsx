@@ -6,6 +6,7 @@ import SessionFormContainer from './sessions/session_form_container';
 const App = (props) => {
   return (
     <div>
+      hi
       <AuthRoute path='/login' component={SessionFormContainer}/>
       <AuthRoute path='/signup' component={SessionFormContainer}/>
     </div>
