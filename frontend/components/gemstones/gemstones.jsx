@@ -11,7 +11,6 @@ class Gemstones extends React.Component {
   }
 
   render () {
-    debugger
     return (
       <ul>
         { this.props.rocks.map((rock, id) => {
