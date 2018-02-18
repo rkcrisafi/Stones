@@ -24,6 +24,3 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(SessionForm);
-
-
-// const processForm = (location.pathname === '/login') ? login : signup;
