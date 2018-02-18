@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { AuthRoute } from '../util/route_util';
 import SessionFormContainer from './sessions/session_form_container';
+import GemstonesContainer from './gemstones/gemstones_container';
 
 const App = (props) => {
   return (
@@ -9,6 +10,7 @@ const App = (props) => {
       hi
       <AuthRoute path='/login' component={SessionFormContainer}/>
       <AuthRoute path='/signup' component={SessionFormContainer}/>
+      <Route path='/gemstones' component={GemstonesContainer}/>
     </div>
   );
 };

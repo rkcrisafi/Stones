@@ -1,4 +1,4 @@
-class Api::RockController < ApplicationController
+class Api::RocksController < ApplicationController
 
   def index
     @rocks = Rock.all
