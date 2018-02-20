@@ -6,7 +6,7 @@ const GemstoneItem = (props) => {
   return (
     <div>
       <Link to={`/gemstones/${rock.id}`}>
-        <div>IMAGE</div>
+        <div><img src={rock.img}/></div>
         <div>{rock.name}</div>
       </Link>
     </div>
