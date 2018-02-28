@@ -1,13 +1,16 @@
 .stone-index-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
   max-width: 1300px;
   min-width: 450px;
 }
 
 .stone-index-item {
+  display:inline-block;
+}
 
+.stone-index-item-image {
+  max-width: 200px;
+  min-width: 200px;
 }
 
 .stone-index-item-image img {
