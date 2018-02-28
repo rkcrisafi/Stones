@@ -12,7 +12,7 @@ class Gemstones extends React.Component {
 
   render () {
     return (
-      <ul>
+      <ul className="stone-index-list">
         { this.props.rocks.map((rock, id) => {
           return <GemstoneItem key={id} rock={rock}/>;
         })}
