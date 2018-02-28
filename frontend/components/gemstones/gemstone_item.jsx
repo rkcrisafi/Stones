@@ -6,8 +6,8 @@ const GemstoneItem = (props) => {
   return (
     <div className="stone-index-item">
       <Link to={`/gemstones/${rock.id}`}>
-        <div><img src={rock.img}/></div>
-        <div>{rock.name}</div>
+        <div className="stone-index-item-image"><img src={rock.img}/></div>
+        <div className="stone-index-item-name">{rock.name}</div>
       </Link>
     </div>
   );
