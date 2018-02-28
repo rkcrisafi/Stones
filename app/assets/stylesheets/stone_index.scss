@@ -2,6 +2,7 @@
   // display: flex;
   // justify-content: center;
   text-align: center;
+  margin: auto;
 }
 
 
@@ -9,10 +10,10 @@
 .stone-index-list {
   display: inline-block;
   text-align: left;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   // justify-content: none;
   // align-content: flex-start;
-  max-width: 1300px;
+  max-width: 1260px;
   min-width: 450px;
 }
 
