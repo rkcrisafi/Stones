@@ -1,36 +1,64 @@
+:root {
+  --img-size: 250px;
+  --img-margin-size: 18px;
+  --first-breakpoint: calc(var(--img-size) * 5 + var(--img-margin-size) * 10);
+}
+
+
 .stone-index {
-  // display: flex;
-  // justify-content: center;
   text-align: center;
   margin: auto;
 }
 
+@media screen and (max-width: calc( var(--img-size) * 5 + var(--img-margin-size) * 10)) {
+  .stone-index-list {
+    max-width: calc( var(--img-size) * 4 + var(--img-margin-size) * 8) !important;
+  }
+}
+
+@media screen and (max-width: calc( 250 * 4)) {
+  .dummy-test {
+    background: green !important;
+  }
+}
 
 
 .stone-index-list {
   display: inline-block;
   text-align: left;
   flex-wrap: wrap;
-  // justify-content: none;
-  // align-content: flex-start;
-  max-width: 1260px;
+  // max-width: 1460px;
   min-width: 450px;
 }
 
+.dummy-test {
+  width: calc( var(--img-size) * 4 + var(--img-margin-size) * 8);
+  height: var(--first-breakpoint);
+  background: red;
+}
 
 
 .stone-index-item {
   display:inline-block;
-  margin-left: 8px;
-  margin-bottom: 8px;
+  margin-left: var(--img-margin-size);
+  margin-right: var(--img-margin-size);
+  margin-bottom: 36px;
 }
 
 .stone-index-item-image {
-  max-width: 200px;
-  min-width: 200px;
+  max-width: var(--img-size);
+  min-width: var(--img-size);;
   overflow: hidden;
 }
 
 .stone-index-item-image img {
-  height: 200px;
+  height: var(--img-size);;
+}
+.stone-index-item-name {
+  font-weight: 700;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  font-family: helvetica, sans-serif;
+  text-transform: uppercase;
 }
