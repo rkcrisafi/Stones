@@ -4,7 +4,7 @@ const RockReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_ROCKS:
-      return Object.assign({}, state, action.rocks);
+      return action.rocks;
     case RECEIVE_ROCK:
       return Object.assign({}, state, { [action.rock.id]: action.rock });
     default:

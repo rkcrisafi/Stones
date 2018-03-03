@@ -7,8 +7,15 @@ class Gemstones extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchRocks();
+    this.props.fetchRocks(this.props.pageSearch);
   }
+
+  componentWillReceiveProps(newProps) {
+    if (newProps.pageSearch !== this.props.pageSearch) {
+      this.props.fetchRocks(newProps.pageSearch);
+    }
+  }
+
 
   render () {
     return (

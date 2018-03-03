@@ -4,12 +4,13 @@ import Gemstones from './gemstones';
 
 const mapStateToProps = (state, ownProps) => {
   return {
+    pageSearch: ownProps.location.search,
     rocks: Object.keys(state.rocks).map(id => state.rocks[id]),
   };
 };
 
 const mapDispatchToProps = dispatch => ({
-  fetchRocks: () => dispatch(fetchRocks()),
+  fetchRocks: (query) => dispatch(fetchRocks(query)),
   fetchRock: rockId => dispatch(fetchRock(rockId)),
 });
 

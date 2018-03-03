@@ -13,8 +13,8 @@ const receiveRock = rock => ({
   rock
 });
 
-export const fetchRocks = rocks => dispatch => {
-  return RocksAPIUtil.fetchRocks().then(rocks => dispatch(receiveRocks(rocks)));
+export const fetchRocks = (query) => dispatch => {
+  return RocksAPIUtil.fetchRocks(query).then(rocks => dispatch(receiveRocks(rocks)));
 };
 
 export const fetchRock = rockId => dispatch => {
