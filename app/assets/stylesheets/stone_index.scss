@@ -5,18 +5,37 @@
 }
 
 .stone-index-list {
-  display: inline-block;
-  text-align: left;
-  flex-wrap: wrap;
-  // max-width: 1460px;
+  display: grid;
+  margin: 0 auto;
+  max-width: 1346px;
   min-width: 450px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px 24px;
 }
 
+@media screen and (max-width: 1346px) and (min-width: 1072px) {
+  .stone-index-list {
+    grid-template-columns: repeat(4, 1fr);
+    width: 1072px;
+  }
+}
+
+@media screen and (min-width: 798px) and (max-width: 1071px) {
+  .stone-index-list {
+    grid-template-columns: repeat(3, 1fr);
+    width: 798px;
+  }
+}
+
+// @media screen and (max-width: 1346px) {
+//   .stone-index-list {
+//     grid-template-columns: repeat(4, 1fr);
+//     width: 1072px;
+//   }
+// }
+
 .stone-index-item {
-  display:inline-block;
-  margin-left: 18px;
-  margin-right: 18px;
-  margin-bottom: 36px;
+
 }
 
 .stone-index-item-image {
@@ -28,6 +47,7 @@
 .stone-index-item-image img {
   height: 250px;
 }
+
 .stone-index-item-name {
   font-weight: 700;
   text-align: center;
