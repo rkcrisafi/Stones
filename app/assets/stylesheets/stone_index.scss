@@ -1,7 +1,8 @@
 :root {
   --img-size: 250px;
   --img-margin-size: 18px;
-  --first-breakpoint: calc(var(--img-size) * 5 + var(--img-margin-size) * 10);
+  --first-breakpoint: calc(var(--img-size) * 3 + var(--img-margin-size) * 6);
+  --variable: 1000px;
 }
 
 
@@ -10,13 +11,13 @@
   margin: auto;
 }
 
-@media screen and (max-width: calc( var(--img-size) * 5 + var(--img-margin-size) * 10)) {
+@media screen and (max-width: var(--img-margin-size)) {
   .stone-index-list {
     max-width: calc( var(--img-size) * 4 + var(--img-margin-size) * 8) !important;
   }
 }
 
-@media screen and (max-width: calc( 250 * 4)) {
+@media screen and (max-width:var(--variable)) {
   .dummy-test {
     background: green !important;
   }
