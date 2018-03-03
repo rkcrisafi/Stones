@@ -7,43 +7,44 @@
 .stone-index-list {
   display: grid;
   margin: 0 auto;
-  max-width: 1346px;
-  min-width: 450px;
+  max-width: 84.125em;
+  min-width: 28.125em;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 16px 24px;
+  grid-gap: 1em 1.5em;
 }
 
 .stone-index-item-image {
-  max-width: 250px;
-  min-width: 250px;
+  max-width: 15.625em;
+  min-width: 15.625em;
   overflow: hidden;
 }
 
-@media screen and (max-width: 1346px) and (min-width: 1072px) {
+@media screen and (max-width: 84.125em) and (min-width: 67em) {
   .stone-index-list {
     grid-template-columns: repeat(4, 1fr);
-    width: 1072px;
+    width: 67em;
   }
 }
 
-@media screen and (min-width: 798px) and (max-width: 1071px) {
+@media screen and (min-width: 48.250em) and (max-width: 66.938em) {
   .stone-index-list {
     grid-template-columns: repeat(4, 1fr);
-    width: 798px;
+    width: 48.250em;
   }
 
   .stone-index-item-image {
-    max-width: 175px;
-    min-width: 175px;
+    max-width: 10.938em;
+    min-width: 10.938em;
     overflow: hidden;
-    height: 175px;
+    height: 10.938em;
   }
 }
 
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 48.188em
+) {
   .stone-index-list {
     grid-template-columns: repeat(2, 1fr);
-    width: 524px;
+    width: 32.750em;
   }
 }
 
@@ -55,14 +56,14 @@
 
 
 .stone-index-item-image img {
-  height: 250px;
+  height: 15.625em;
 }
 
 .stone-index-item-name {
   font-weight: 700;
   text-align: center;
-  padding-top: 10px;
-  font-size: 14px;
+  padding-top: 0.625em;
+  font-size: 0.875em;
   font-family: helvetica, sans-serif;
   text-transform: uppercase;
 }
