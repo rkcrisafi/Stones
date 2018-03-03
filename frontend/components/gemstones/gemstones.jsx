@@ -18,7 +18,6 @@ class Gemstones extends React.Component {
             return <GemstoneItem key={id} rock={rock}/>;
           })}
         </ol>
-        <div className="dummy-test"></div>
       </div>
     );
   }
