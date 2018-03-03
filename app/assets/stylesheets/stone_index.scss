@@ -27,12 +27,12 @@
   }
 }
 
-// @media screen and (max-width: 1346px) {
-//   .stone-index-list {
-//     grid-template-columns: repeat(4, 1fr);
-//     width: 1072px;
-//   }
-// }
+@media screen and (max-width: 797px) {
+  .stone-index-list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 524px;
+  }
+}
 
 .stone-index-item {
 
