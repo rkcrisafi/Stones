@@ -1,5 +1,6 @@
 import React from 'react';
 import GemstoneItem from './gemstone_index_item';
+import PagesNavBarContainer from './pages_navigation_bar';
 
 class Gemstones extends React.Component {
   constructor(props) {

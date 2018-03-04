@@ -7,6 +7,7 @@ class PagesNavBar extends React.Component {
   render () {
     return (
       <div>
+        HELLO
       </div>
     );
   }
@@ -20,7 +21,7 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  
+
 });
 
 export default withRouter(connect(
