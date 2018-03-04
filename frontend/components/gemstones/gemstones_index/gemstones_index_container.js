@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { fetchRocks, fetchRock } from '../../actions/rock_actions';
-import Gemstones from './gemstones';
+import { fetchRocks, fetchRock } from '../../../actions/rock_actions';
+import Gemstones from './gemstones_index';
 
 const mapStateToProps = (state, ownProps) => {
   return {

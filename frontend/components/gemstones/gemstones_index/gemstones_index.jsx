@@ -1,5 +1,5 @@
 import React from 'react';
-import GemstoneItem from './gemstone_item';
+import GemstoneItem from './gemstone_index_item';
 
 class Gemstones extends React.Component {
   constructor(props) {
@@ -20,6 +20,7 @@ class Gemstones extends React.Component {
   render () {
     return (
       <div className="stone-index">
+
         <ol className="stone-index-list">
           { this.props.rocks.map((rock, id) => {
             return <GemstoneItem key={id} rock={rock}/>;
