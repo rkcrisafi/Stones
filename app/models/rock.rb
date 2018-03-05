@@ -1,5 +1,6 @@
 class Rock < ApplicationRecord
   validates :name, presence: true, uniqueness: true
+  validates :item_type, presence: true, inclusion: { in: ['gem', 'shell', 'natural'] }
 
   has_many :images
 
