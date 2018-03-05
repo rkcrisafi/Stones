@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const GemstoneItem = (props) => {
+const StoneItem = (props) => {
   const { rock } = props;
   return (
     <div className="stone-index-item">
@@ -13,4 +13,4 @@ const GemstoneItem = (props) => {
   );
 };
 
-export default GemstoneItem;
+export default StoneItem;

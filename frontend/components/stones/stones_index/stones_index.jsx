@@ -1,19 +1,20 @@
 import React from 'react';
-import GemstoneItem from './gemstone_index_item';
+import StoneItem from './stone_index_item';
 import PagesNavBarContainer from './pages_navigation_bar';
 
-class Gemstones extends React.Component {
+class Stones extends React.Component {
   constructor(props) {
     super(props);
   }
 
   componentDidMount() {
-    this.props.fetchRocks(this.props.pageSearch);
+    const { fetchRocks, pageSearch, itemType } = this.props;
+    fetchRocks(pageSearch, itemType);
   }
 
   componentWillReceiveProps(newProps) {
     if (newProps.pageSearch !== this.props.pageSearch) {
-      this.props.fetchRocks(newProps.pageSearch);
+      this.props.fetchRocks(newProps.pageSearch, newProps.itemType);
     }
   }
 
@@ -24,7 +25,7 @@ class Gemstones extends React.Component {
 
         <ol className="stone-index-list">
           { this.props.rocks.map((rock, id) => {
-            return <GemstoneItem key={id} rock={rock}/>;
+            return <StoneItem key={id} rock={rock}/>;
           })}
         </ol>
       </div>
@@ -33,4 +34,4 @@ class Gemstones extends React.Component {
 
 }
 
-export default Gemstones;
+export default Stones;
