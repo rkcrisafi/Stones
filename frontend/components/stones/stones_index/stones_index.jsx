@@ -22,7 +22,7 @@ class Stones extends React.Component {
   render () {
     return (
       <div className="stone-index">
-
+        <PagesNavBarContainer rockCount={this.props.rockCount}/>
         <ol className="stone-index-list">
           { this.props.rocks.map((rock, id) => {
             return <StoneItem key={id} rock={rock}/>;

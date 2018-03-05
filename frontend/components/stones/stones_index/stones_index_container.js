@@ -10,8 +10,9 @@ const mapStateToProps = (state, ownProps) => {
   }
   return {
     pageSearch: ownProps.location.search,
-    rocks: Object.keys(state.rocks).map(id => state.rocks[id]),
+    rocks: Object.keys(state.rocks.rocks).map(id => state.rocks.rocks[id]),
     itemType,
+    rockCount: state.rocks.rockCount,
   };
 };
 
