@@ -1,7 +1,8 @@
-export const fetchRocks = (searchQuery) => {
+export const fetchRocks = (searchQuery, itemType) => {
   return $.ajax({
     method: 'get',
-    url: `/api/rocks${searchQuery}`
+    url: `/api/rocks/${searchQuery}`,
+    data: { rock: { item_type: itemType }}
   });
 };
 
