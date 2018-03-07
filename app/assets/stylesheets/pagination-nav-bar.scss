@@ -1,17 +1,12 @@
-.pagination-bar {
+.pagination-bar, .page-navigation-bar, .page-range, .current-page-and-nav {
   display: flex;
+  align-items: center;
+}
+
+.pagination-bar {
   justify-content: space-between;
   max-width: 84.125em;
   font-family: helvetica, sans-serif;
-}
-
-.current-page-and-nav {
-  display: flex;
-}
-
-.page-navigation-bar, .page-range {
-  display: flex;
-  align-items: center;
 }
 
 .selected-page {
@@ -24,18 +19,15 @@
 
 .pagination-bar {
   padding: 10px 0;
-  align-items: center;
 }
 
 .item-count {
   font-weight: 700;
   font-size: 14px;
-  // padding-top: 2px;
 }
 
 .current-page {
   margin-right: 20px;
-  // padding-top: 2px;
 }
 
 .page-nav-arrow {
