@@ -1,40 +1,48 @@
 .pagination-bar, .page-navigation-bar, .page-range, .current-page-and-nav {
   display: flex;
   align-items: center;
+  color: inherit;
 }
 
 .pagination-bar {
   justify-content: space-between;
   max-width: 84.125em;
   font-family: helvetica, sans-serif;
+  color: #3b4e47;
+  padding: 10px 0;
 }
 
 .selected-page {
   font-weight: 700;
+  color: inherit;
 }
 
 .faded {
-  color: gray;
+  color: rgb(170, 170, 170);
 }
 
-.pagination-bar {
-  padding: 10px 0;
+.current-page-and-nav {
+  color: inherit;
 }
 
 .item-count {
   font-weight: 700;
   font-size: 14px;
+  color: inherit;
 }
 
 .current-page {
+  color: inherit;
   margin-right: 20px;
 }
 
 .page-nav-arrow {
+  color: inherit;
   padding: 0 5px;
   font-size: 20px;
 }
 
 .page-number {
+  color: inherit;
   padding: 0 2px;
 }
