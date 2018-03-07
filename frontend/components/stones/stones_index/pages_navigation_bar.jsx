@@ -13,21 +13,20 @@ const pageRange = (cur, total) => {
 };
 
 class PagesNavBar extends React.Component {
-  // we want to add page numbers up to 5;
-  // the current page number should be pulled from ownProps and shown in the middle of 5 pages
-  // the current page out of total number (2 of 11)
 
   render () {
     const { rockCount, pageNum } = this.props;
     let pageCount = Math.ceil(this.props.rockCount / 20 );
-
+    let currentPages = pageRange(pageNum, pageCount).map(page => {
+      return <div key={ page } className={ "page-number" + (pageNum === page ? " selected-page" : "") }>{page}</div>;
+    });
     return (
       <div>
-        <div>{this.props.rockCount} Items</div>
+        <div>{ rockCount } Items</div>
         <div>{ pageNum + " of " + pageCount }</div>
           <div>
             <div><i class="fas fa-angle-left"></i></div>
-
+            <div className="current-pages">{ currentPages }</div>
             <div><i class="fas fa-angle-right"></i></div>
           </div>
       </div>
