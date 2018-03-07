@@ -18,16 +18,24 @@ class PagesNavBar extends React.Component {
     const { rockCount, pageNum } = this.props;
     let pageCount = Math.ceil(this.props.rockCount / 20 );
     let currentPages = pageRange(pageNum, pageCount).map(page => {
-      return <div key={ page } className={ "page-number" + (pageNum === page ? " selected-page" : "") }>{page}</div>;
+      return (
+        pageNum === page ?
+        <div key={ page } className={ "page-number selected-page"}>{ page }</div> :
+        <Link to={`/gemstones?page=${page}`} key={ page } className="page-number">{ page }</Link>
+      );
     });
     return (
-      <div>
-        <div>{ rockCount } Items</div>
-        <div>{ pageNum + " of " + pageCount }</div>
-          <div>
-            <div><i class="fas fa-angle-left"></i></div>
-            <div className="current-pages">{ currentPages }</div>
-            <div><i class="fas fa-angle-right"></i></div>
+      <div className="pagination-bar">
+        <div className="item-count">{ rockCount } Items</div>
+        <div className="current-page">{ pageNum + " of " + pageCount }</div>
+          <div className="page-navigation-bar">
+            { pageNum === 1 ? <div><i class="fas fa-angle-left faded"></i></div> :
+              <Link to={`/gemstones?page=${pageNum-1}`}><i class="fas fa-angle-left"></i></Link>
+            }
+            <div className="page-range">{ currentPages }</div>
+            { pageNum === pageCount ? <div><i class="fas fa-angle-right faded"></i></div> :
+              <Link to={`/gemstones?page=${pageNum+1}`}><i class="fas fa-angle-right"></i></Link>
+            }
           </div>
       </div>
     );
