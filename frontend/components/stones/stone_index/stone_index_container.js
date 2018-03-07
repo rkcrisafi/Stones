@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchRocks, fetchRock } from '../../../actions/rock_actions';
-import Stones from './stones_index';
+import StoneIndex from './stone_index';
 
 const mapStateToProps = (state, ownProps) => {
   let itemType;
@@ -24,4 +24,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Stones);
+)(StoneIndex);

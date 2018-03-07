@@ -2,7 +2,7 @@ import React from 'react';
 import StoneItem from './stone_index_item';
 import PagesNavBarContainer from './pages_navigation_bar';
 
-class Stones extends React.Component {
+class StoneIndex extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -34,4 +34,4 @@ class Stones extends React.Component {
 
 }
 
-export default Stones;
+export default StoneIndex;
