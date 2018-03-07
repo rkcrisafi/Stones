@@ -8,4 +8,4 @@ json.rocks do
   end
 end
 
-json.rockCount @rocks.length
+json.rockCount Rock.where(item_type: @item_type).length

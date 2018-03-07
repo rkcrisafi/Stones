@@ -16,7 +16,7 @@ class PagesNavBar extends React.Component {
 
   render () {
     const { rockCount, pageNum } = this.props;
-    let pageCount = Math.ceil(this.props.rockCount / 20 );
+    let pageCount = Math.ceil(this.props.rockCount / 4 );
     let currentPages = pageRange(pageNum, pageCount).map(page => {
       return (
         pageNum === page ?
@@ -27,16 +27,20 @@ class PagesNavBar extends React.Component {
     return (
       <div className="pagination-bar">
         <div className="item-count">{ rockCount } Items</div>
-        <div className="current-page">{ pageNum + " of " + pageCount }</div>
+        <div className="current-page-and-nav">
+          <div className="current-page">{ pageNum + " of " + pageCount }</div>
           <div className="page-navigation-bar">
-            { pageNum === 1 ? <div><i class="fas fa-angle-left faded"></i></div> :
-              <Link to={`/gemstones?page=${pageNum-1}`}><i class="fas fa-angle-left"></i></Link>
+            { pageNum === 1 ? <div className="page-nav-arrow"><i class="fas fa-angle-left faded"></i></div> :
+              <Link to={`/gemstones?page=${pageNum-1}`} className="page-nav-arrow"><i class="fas fa-angle-left"></i></Link>
             }
+
             <div className="page-range">{ currentPages }</div>
-            { pageNum === pageCount ? <div><i class="fas fa-angle-right faded"></i></div> :
-              <Link to={`/gemstones?page=${pageNum+1}`}><i class="fas fa-angle-right"></i></Link>
+
+            { pageNum === pageCount ? <div className="page-nav-arrow"><i class="fas fa-angle-right faded"></i></div> :
+              <Link to={`/gemstones?page=${pageNum+1}`} className="page-nav-arrow"><i class="fas fa-angle-right"></i></Link>
             }
           </div>
+        </div>
       </div>
     );
   }
@@ -45,7 +49,7 @@ class PagesNavBar extends React.Component {
 
 const mapStateToProps = (state, ownProps) => {
   const { search } = ownProps.location;
-  const pageNum = (search === "" ? "1" : search.match(/page=(\d+)/));
+  const pageNum = (search === "" ? "1" : search.match(/page=(\d+)/)[1]);
   return {
     pageNum: Number(pageNum),
     rockCount: ownProps.rockCount,

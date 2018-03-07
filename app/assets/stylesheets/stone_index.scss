@@ -2,13 +2,13 @@
 .stone-index {
   text-align: center;
   margin: auto;
+  max-width: 84.125em;
+  min-width: 28.125em;
 }
 
 .stone-index-list {
   display: grid;
   margin: 0 auto;
-  max-width: 84.125em;
-  min-width: 28.125em;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1em 1.5em;
 }
@@ -20,16 +20,20 @@
 }
 
 @media screen and (max-width: 84.125em) and (min-width: 67em) {
+  .stone-index {
+    width: 67em;
+  }
   .stone-index-list {
     grid-template-columns: repeat(4, 1fr);
-    width: 67em;
   }
 }
 
 @media screen and (min-width: 48.250em) and (max-width: 66.938em) {
+  .stone-index {
+    width: 48.250em;
+  }
   .stone-index-list {
     grid-template-columns: repeat(4, 1fr);
-    width: 48.250em;
   }
 
   .stone-index-item-image {
@@ -45,11 +49,12 @@
   }
 }
 
-@media screen and (max-width: 48.188em
-) {
+@media screen and (max-width: 48.188em) {
+  .stone-index {
+    width: 32.750em;
+  }
   .stone-index-list {
     grid-template-columns: repeat(2, 1fr);
-    width: 32.750em;
   }
 }
 
