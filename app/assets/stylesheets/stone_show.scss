@@ -20,6 +20,7 @@
 
 .rock-info {
   text-align: center;
+  color: #3b4e47;
 }
 
 .rock-name {
@@ -29,11 +30,13 @@
   margin: 20px auto;
   text-transform: uppercase;
   letter-spacing: 1.4px;
+  color: inherit;
 }
 
 .rock-description {
   width: 70%;
   margin: 20px auto;
+  color: inherit;
 }
 
 @media screen and (max-width: 48.250em) {
