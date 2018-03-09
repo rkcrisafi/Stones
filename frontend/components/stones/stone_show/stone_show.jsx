@@ -18,7 +18,7 @@ class StoneShow extends React.Component {
       this.images.unshift(newProps.rock.img);
       this.forceUpdate();
     }
-    if (newProps.images && !this.props.images) {
+    if (newProps.images.length > 0 && this.props.images.length === 0) {
       const imgSrcs = newProps.images.map(image => image.img);
       this.images = this.images.concat(imgSrcs);
       this.forceUpdate();
