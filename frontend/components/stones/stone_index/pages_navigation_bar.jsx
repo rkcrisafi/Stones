@@ -20,7 +20,7 @@ class PagesNavBar extends React.Component {
     let currentPages = pageRange(pageNum, pageCount).map(page => {
       return (
         pageNum === page ?
-        <div key={ page } className={ "page-number selected-page"}>{ page }</div> :
+        <div key={ page } className="page-number selected-page">{ page }</div> :
         <Link to={`/gemstones?page=${page}`} key={ page } className="page-number">{ page }</Link>
       );
     });

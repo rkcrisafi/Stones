@@ -6,7 +6,7 @@ import StoneShow from './stone_show';
 const mapStateToProps = (state, ownProps) => {
   const rockId = ownProps.match.params.rockId;
   const rock = state.rocks.rocks[rockId];
-  const imagesUnfiltered = rock ? rock.imageIds.map(id => state.images[id]) : [];
+  const imagesUnfiltered = rock && rock.imageIds ? rock.imageIds.map(id => state.images[id]) : [];
   const images = imagesUnfiltered.filter(img => img !== undefined);
   return {
     rockId,

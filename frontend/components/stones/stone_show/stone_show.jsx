@@ -27,6 +27,36 @@ class StoneShow extends React.Component {
 
   render() {
     const { rock } = this.props;
+    let carouselClassName;
+    switch (this.images.length) {
+      case 0:
+      case 1:
+        carouselClassName = "car";
+        break;
+      case 2:
+        carouselClassName = "car-2";
+        break;
+      case 3:
+        carouselClassName = "car-3";
+        break;
+      case 4:
+        carouselClassName = "car-4";
+        break;
+      default:
+        carouselClassName = "car-5";
+    }
+
+    // if (this.images.length < 2) {
+    //   carouselClassName = "car";
+    // } else if (this.images.length === 2) {
+    //   carouselClassName = "car-2";
+    // } else if (this.images.length === 3) {
+    //   carouselClassName = "car-3";
+    // } else if (this.images.length === 4) {
+    //   carouselClassName = "car-4";
+    // } else {
+    //   carouselClassName = "car-5";
+    // }
     return (
       <div className="stone-show">
         { !rock ? null : (
@@ -35,10 +65,12 @@ class StoneShow extends React.Component {
               <div className="rock-image">
                 <img src={rock.img} />
               </div>
-              <div className="img-carousel">
-                { this.images.map(url => {
-                  return <div><img src={url}/></div>;
-                })}
+              <div className="rock-images">
+                <div className={`img-carousel ${carouselClassName}`}>
+                  { this.images.map(url => {
+                    return <div className="carousel-image"><img src={url}/></div>;
+                    })}
+                  </div>
               </div>
             </div>
             <div className="rock-info">
