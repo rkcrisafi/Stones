@@ -1,26 +1,14 @@
 .img-carousel {
-  display: grid;
-  grid-column-gap: 15px;
+  display: flex;
   overflow: hidden;
 }
 
-.car {
-  display: none;
+.carousel-image {
+  margin-left: 15px;
 }
 
-.car-2 {
-  grid-template-columns: repeat(2, 1fr);
-  width: 175px;
-}
-
-.car-3 {
-  grid-template-columns: repeat(3, 1fr);
-  width: 270px;
-}
-
-.car-4 {
-  grid-template-columns: repeat(4, 1fr);
-  width: 365px;
+.carousel-image:first-child {
+  margin-left: 0;
 }
 
 .img-carousel img {

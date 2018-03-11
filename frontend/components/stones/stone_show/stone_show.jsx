@@ -14,7 +14,7 @@ class StoneShow extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    if (newProps.rock && !this.props.rock) {
+    if ((newProps.rock && !this.props.rock) || (this.props.rock && !this.props.rock.imageIds && newProps.rock.imageIds)) {
       this.images.unshift(newProps.rock.img);
       this.forceUpdate();
     }
@@ -28,35 +28,7 @@ class StoneShow extends React.Component {
   render() {
     const { rock } = this.props;
     let carouselClassName;
-    switch (this.images.length) {
-      case 0:
-      case 1:
-        carouselClassName = "car";
-        break;
-      case 2:
-        carouselClassName = "car-2";
-        break;
-      case 3:
-        carouselClassName = "car-3";
-        break;
-      case 4:
-        carouselClassName = "car-4";
-        break;
-      default:
-        carouselClassName = "car-5";
-    }
 
-    // if (this.images.length < 2) {
-    //   carouselClassName = "car";
-    // } else if (this.images.length === 2) {
-    //   carouselClassName = "car-2";
-    // } else if (this.images.length === 3) {
-    //   carouselClassName = "car-3";
-    // } else if (this.images.length === 4) {
-    //   carouselClassName = "car-4";
-    // } else {
-    //   carouselClassName = "car-5";
-    // }
     return (
       <div className="stone-show">
         { !rock ? null : (
