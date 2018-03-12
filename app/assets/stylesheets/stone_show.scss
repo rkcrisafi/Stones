@@ -3,18 +3,13 @@
 
 .rock-image-description {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   grid-column-gap: 20px;
   margin: 30px;
 }
 
-.rock-images {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
 .rock-image {
+
 }
 
 .rock-image > img {

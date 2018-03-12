@@ -20,14 +20,23 @@ class StoneShow extends React.Component {
     }
     if (newProps.images.length > 0 && this.props.images.length === 0) {
       const imgSrcs = newProps.images.map(image => image.img);
-      this.images = this.images.concat(imgSrcs);
+      this.images = this.images.concat(imgSrcs).concat(imgSrcs);
       this.forceUpdate();
     }
   }
 
   render() {
+    //figure how to measure width of rock-image (make sure happens after rock-image is mounted)
     const { rock } = this.props;
-    let carouselClassName;
+    let carouselClass;
+    let rockImagesClass;
+    const totalWidth = $(document.body).width();
+    console.log(((totalWidth - 80) / 2));
+    console.log((this.images.length * (15 + 80) - 15));
+    if (((totalWidth - 80) / 2) >= (this.images.length * (15 + 80) - 15)) {
+      carouselClass = 'img-carousel';
+      rockImagesClass = 'rock-images';
+    }
 
     return (
       <div className="stone-show">
@@ -37,12 +46,12 @@ class StoneShow extends React.Component {
               <div className="rock-image">
                 <img src={rock.img} />
               </div>
-              <div className="rock-images">
-                <div className={`img-carousel ${carouselClassName}`}>
+              <div id="rock-images" className={`${rockImagesClass}`}>
+                <div id="img-carousel" className={`${carouselClass}`}>
                   { this.images.map(url => {
                     return <div className="carousel-image"><img src={url}/></div>;
                     })}
-                  </div>
+                </div>
               </div>
             </div>
             <div className="rock-info">

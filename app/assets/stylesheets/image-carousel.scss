@@ -1,6 +1,14 @@
+.rock-images {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .img-carousel {
   display: flex;
   overflow: hidden;
+  // position: relative;
+  // left: 0;
 }
 
 .carousel-image {
