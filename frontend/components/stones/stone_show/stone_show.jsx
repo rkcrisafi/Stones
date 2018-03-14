@@ -1,4 +1,5 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
 
 class StoneShow extends React.Component {
   constructor(props) {
@@ -46,13 +47,11 @@ class StoneShow extends React.Component {
               <div className="rock-image">
                 <img src={rock.img} />
               </div>
-              <div id="rock-images" className={`${rockImagesClass}`}>
-                <div id="img-carousel" className={`${carouselClass}`}>
-                  { this.images.map(url => {
-                    return <div className="carousel-image"><img src={url}/></div>;
-                    })}
-                </div>
-              </div>
+              <Carousel>
+                {this.images.map(url => {
+                  return <div><img src={url}/></div>;
+                })}
+              </Carousel>
             </div>
             <div className="rock-info">
               <div className="rock-name">{rock.name}</div>
@@ -66,3 +65,11 @@ class StoneShow extends React.Component {
 }
 
 export default StoneShow;
+
+// <div id="rock-images" className={`${rockImagesClass}`}>
+//   <div id="img-carousel" className={`${carouselClass}`}>
+//     { this.images.map(url => {
+//       return <div className="carousel-image"><img src={url}/></div>;
+//       })}
+//   </div>
+// </div>
