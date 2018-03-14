@@ -28,7 +28,8 @@ class StoneShow extends React.Component {
                 showIndicators={ false }
                 swipeable={ true }
                 emulateTouch={ true }
-                showThumbs={ this.images.length !== 1}>
+                showStatus={ false }
+                showThumbs={ allImages.length !== 1}>
                 {allImages.map((url, i) => {
                   return <div key={ i } ><img src={url}/></div>;
                 })}
