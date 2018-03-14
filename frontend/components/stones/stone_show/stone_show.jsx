@@ -21,7 +21,7 @@ class StoneShow extends React.Component {
     }
     if (newProps.images.length > 0 && this.props.images.length === 0) {
       const imgSrcs = newProps.images.map(image => image.img);
-      this.images = this.images.concat(imgSrcs).concat(imgSrcs);
+      this.images = this.images.concat(imgSrcs);
       this.forceUpdate();
     }
   }
@@ -44,10 +44,11 @@ class StoneShow extends React.Component {
         { !rock ? null : (
           <div className="rock-image-description">
             <div>
-              <div className="rock-image">
-                <img src={rock.img} />
-              </div>
-              <Carousel>
+              <Carousel
+                showArrows={ true }
+                showIndicators={ false }
+                swipeable={ true }
+                emulateTouch= { true }>
                 {this.images.map(url => {
                   return <div><img src={url}/></div>;
                 })}
