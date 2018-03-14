@@ -4,7 +4,6 @@ import { Carousel } from 'react-responsive-carousel';
 class StoneShow extends React.Component {
   constructor(props) {
     super(props);
-    this.images = [];
     this.state = { displayed: null };
   }
 
@@ -14,30 +13,10 @@ class StoneShow extends React.Component {
     fetchImages(rockId);
   }
 
-  componentWillReceiveProps(newProps) {
-    if ((newProps.rock && !this.props.rock) || (this.props.rock && !this.props.rock.imageIds && newProps.rock.imageIds)) {
-      this.images.unshift(newProps.rock.img);
-      this.forceUpdate();
-    }
-    if (newProps.images.length > 0 && this.props.images.length === 0) {
-      const imgSrcs = newProps.images.map(image => image.img);
-      this.images = this.images.concat(imgSrcs);
-      this.forceUpdate();
-    }
-  }
-
   render() {
-    //figure how to measure width of rock-image (make sure happens after rock-image is mounted)
-    const { rock } = this.props;
-    let carouselClass;
-    let rockImagesClass;
-    const totalWidth = $(document.body).width();
-    console.log(((totalWidth - 80) / 2));
-    console.log((this.images.length * (15 + 80) - 15));
-    if (((totalWidth - 80) / 2) >= (this.images.length * (15 + 80) - 15)) {
-      carouselClass = 'img-carousel';
-      rockImagesClass = 'rock-images';
-    }
+    const { rock, rockImg, images } = this.props;
+    const imgSrcs = images.map(image => image.img);
+    const allImages = rockImg.concat(imgSrcs);
 
     return (
       <div className="stone-show">
@@ -48,9 +27,10 @@ class StoneShow extends React.Component {
                 showArrows={ true }
                 showIndicators={ false }
                 swipeable={ true }
-                emulateTouch= { true }>
-                {this.images.map(url => {
-                  return <div><img src={url}/></div>;
+                emulateTouch={ true }
+                showThumbs={ this.images.length !== 1}>
+                {allImages.map((url, i) => {
+                  return <div key={ i } ><img src={url}/></div>;
                 })}
               </Carousel>
             </div>
@@ -66,11 +46,3 @@ class StoneShow extends React.Component {
 }
 
 export default StoneShow;
-
-// <div id="rock-images" className={`${rockImagesClass}`}>
-//   <div id="img-carousel" className={`${carouselClass}`}>
-//     { this.images.map(url => {
-//       return <div className="carousel-image"><img src={url}/></div>;
-//       })}
-//   </div>
-// </div>
