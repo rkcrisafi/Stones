@@ -72,6 +72,7 @@ class StoneShow extends React.Component {
           <div className="rock-image-description">
             <div className="main-img-container"
               onMouseMove={(e) => this.mouseMove(e)}>
+
               <Carousel
                 showArrows={ true }
                 showIndicators={ false }
@@ -80,10 +81,12 @@ class StoneShow extends React.Component {
                 showStatus={ false }
                 showThumbs={ allImages.length !== 1}>
                 {allImages.map((url, i) => {
-                  return <div key={ i } ref={(el) => this.imgContainer[i] = el} onMouseEnter={ this.state.zoomToggle ? null : () => this.mouseEnter(url, i) }
+                  return <div key={ i }
+                    onMouseEnter={ () => this.mouseEnter(url, i)} ref={(el) => this.imgContainer[i] = el}
                     ><img src={url}/></div>;
                 })}
               </Carousel>
+
               { !this.state.zoomToggle ? null : (
                 <div onMouseLeave={ () => this.setState({ zoomToggle: false })} className="little-box" style={{ left: boxLeft, top: boxTop, width: boxWidth, height: boxHeight }}></div>
               )}
