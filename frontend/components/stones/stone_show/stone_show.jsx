@@ -12,7 +12,7 @@ class StoneShow extends React.Component {
   constructor(props) {
     super(props);
     this.imgContainer = [];
-    this.state = { zoomToggle: false, zoomUrl: null, boxWidth: null, boxHeight: null, boxTop: null, boxLeft: null, zoomTop: null, zoomLeft: null, zoomAmt: 3, targetIndex: null };
+    this.state = { zoomToggle: false, zoomUrl: null, boxWidth: null, boxHeight: null, boxTop: null, boxLeft: null, zoomTop: null, zoomLeft: null, zoomWidth: null, zoomAmt: 3, targetIndex: null };
   }
 
   componentDidMount() {
@@ -55,9 +55,12 @@ class StoneShow extends React.Component {
       const boxHeight = boxSize.height;
       const boxTop = boxPos.y;
       const boxLeft = boxPos.x;
-      // debugger
 
-      this.setState({ boxWidth, boxHeight, boxTop, boxLeft });
+      const zoomTop = -zoomBoxPos.y;
+      const zoomLeft = -zoomBoxPos.x;
+      const zoomWidth = zoomAmt * img.width;
+
+      this.setState({ boxWidth, boxHeight, boxTop, boxLeft, zoomTop, zoomLeft, zoomWidth });
     }
   }
 
@@ -65,7 +68,7 @@ class StoneShow extends React.Component {
     const { rock, rockImg, images } = this.props;
     const imgSrcs = images.map(image => image.img);
     const allImages = rockImg.concat(imgSrcs);
-    const { boxWidth, boxHeight, boxTop, boxLeft} = this.state;
+    const { boxWidth, boxHeight, boxTop, boxLeft, zoomToggle, zoomUrl, zoomTop, zoomLeft, zoomWidth } = this.state;
 
     return (
 
@@ -94,7 +97,10 @@ class StoneShow extends React.Component {
               )}
             </div>
             <div className="rock-info">
-              { this.state.zoomToggle ? <div></div> :
+              { zoomToggle ?
+                (<div className="zoom-img-container">
+                  <img style={{ width: zoomWidth, top: zoomTop, left: zoomLeft }} src={ zoomUrl } />
+                </div>) :
                (<div>
                  <div className="rock-name">{rock.name}</div>
                  <div className="rock-description">{rock.description}</div>
