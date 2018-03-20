@@ -6,7 +6,7 @@ function getPos(el) {
        el != null;
        lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
   return {x: lx,y: ly};
-  };
+}
 
 class StoneShow extends React.Component {
   constructor(props) {
@@ -30,9 +30,9 @@ class StoneShow extends React.Component {
     if (zoomToggle) {
       const { imgContainer } = this;
       const img = imgContainer[targetIndex].childNodes[0];
-      const { x, y } = getPos(this.img);
+      const { x, y } = getPos(img);
       let mouseCoords = { x: e.clientX - x, y: e.clientY - y };
-      let boxSize = { width: img.width/zoomAmt, height: img.height/zoomAmt }
+      let boxSize = { width: img.width/zoomAmt, height: img.height/zoomAmt };
       let boxCenter = { x: mouseCoords.x, y: mouseCoords.y };
       if (mouseCoords.x < boxSize.width/2) {
         boxCenter.x = boxSize.width/2;
@@ -45,18 +45,19 @@ class StoneShow extends React.Component {
         boxCenter.y = img.height - boxSize.height/2;
       }
       let boxPos = { x: boxCenter.x - boxSize.width / 2,
-        y: boxCenter.y - boxSize.height / 2 }
-        let zoomBoxCenter = { x: boxCenter.x * zoomAmt, y: boxCenter.y * zoomAmt };
-        let zoomBoxPos = {
-          x: zoomBoxCenter.x - boxSize.width * zoomAmt / 2,
-          y: zoomBoxCenter.y - boxSize.height * zoomAmt / 2 }
-          const boxWidth = boxSize.width;
-          const boxHeight = boxSize.height;
-          const boxTop = boxPos.y;
-          const boxLeft = boxPos.x;
-          // debugger
+        y: boxCenter.y - boxSize.height / 2 };
 
-          this.setState({ boxWidth, boxHeight, boxTop, boxLeft });
+      let zoomBoxCenter = { x: boxCenter.x * zoomAmt, y: boxCenter.y * zoomAmt };
+      let zoomBoxPos = {
+        x: zoomBoxCenter.x - boxSize.width * zoomAmt / 2,
+        y: zoomBoxCenter.y - boxSize.height * zoomAmt / 2 };
+      const boxWidth = boxSize.width;
+      const boxHeight = boxSize.height;
+      const boxTop = boxPos.y;
+      const boxLeft = boxPos.x;
+      // debugger
+
+      this.setState({ boxWidth, boxHeight, boxTop, boxLeft });
     }
   }
 
@@ -65,6 +66,7 @@ class StoneShow extends React.Component {
     const imgSrcs = images.map(image => image.img);
     const allImages = rockImg.concat(imgSrcs);
     const { boxWidth, boxHeight, boxTop, boxLeft} = this.state;
+
     return (
 
       <div className="stone-show">
