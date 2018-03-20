@@ -66,6 +66,7 @@ class StoneShow extends React.Component {
     const imgSrcs = images.map(image => image.img);
     const allImages = rockImg.concat(imgSrcs);
     const { boxWidth, boxHeight, boxTop, boxLeft, zoomToggle, zoomUrl, zoomTop, zoomLeft, zoomWidth, imgHeight } = this.state;
+    const isMobileSize =  $('.rock-image-description').css('display') === 'block';
 
     return (
 
@@ -89,19 +90,19 @@ class StoneShow extends React.Component {
                 })}
               </Carousel>
 
-              { !this.state.zoomToggle ? null : (
+              { !zoomToggle || isMobileSize ? null : (
                 <div onMouseLeave={ () => this.setState({ zoomToggle: false })} className="little-box" style={{ left: boxLeft, top: boxTop, width: boxWidth, height: boxHeight }}></div>
               )}
             </div>
             <div className="rock-info">
-              { zoomToggle ?
+              { zoomToggle && !isMobileSize ?
                 (<div className="zoom-img-container" style={{ height: imgHeight }}>
                   <img style={{ width: zoomWidth, top: zoomTop, left: zoomLeft }} src={ zoomUrl } />
                 </div>) :
-               (<div>
-                 <div className="rock-name">{rock.name}</div>
-                 <div className="rock-description">{rock.description}</div>
-               </div>)
+                (<div>
+                  <div className="rock-name">{rock.name}</div>
+                  <div className="rock-description">{rock.description}</div>
+                </div>)
               }
             </div>
           </div>
