@@ -4,10 +4,12 @@ import { AuthRoute } from '../util/route_util';
 import SessionFormContainer from './sessions/session_form_container';
 import StoneIndexContainer from './stones/stone_index/stone_index_container';
 import StoneShowContainer from './stones/stone_show/stone_show_container';
+import NavBar from './navbar/navbar';
 
 const App = (props) => {
   return (
     <div>
+      <NavBar />
       <AuthRoute path='/login' component={SessionFormContainer}/>
       <AuthRoute path='/signup' component={SessionFormContainer}/>
       <Route exact path='/gemstones' component={StoneIndexContainer}/>
