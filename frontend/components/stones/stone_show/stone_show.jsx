@@ -26,8 +26,6 @@ class StoneShow extends React.Component {
       const img = imgContainer[targetIndex].childNodes[0];
       const { x, y } = img.getBoundingClientRect();
       let mouseCoords = { x: e.clientX - x, y: e.clientY - y };
-      console.log(e.clientX);
-      console.log(x);
       let boxSize = { width: img.width/zoomAmt, height: img.height/zoomAmt };
       let boxCenter = { x: mouseCoords.x, y: mouseCoords.y };
       if (mouseCoords.x < boxSize.width/2) {
