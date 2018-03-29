@@ -30,14 +30,14 @@ class PagesNavBar extends React.Component {
         <div className="current-page-and-nav">
           <div className="current-page">{ pageNum + " of " + pageCount }</div>
           <div className="page-navigation-bar">
-            { pageNum === 1 ? <div className="page-nav-arrow"><i class="fas fa-angle-left faded"></i></div> :
-              <Link to={`/gemstones?page=${pageNum-1}`} className="page-nav-arrow"><i class="fas fa-angle-left"></i></Link>
+            { pageNum === 1 ? <div className="page-nav-arrow"><i className="fas fa-angle-left faded"></i></div> :
+              <Link to={`/gemstones?page=${pageNum-1}`} className="page-nav-arrow"><i className="fas fa-angle-left"></i></Link>
             }
 
             <div className="page-range">{ currentPages }</div>
 
-            { pageNum === pageCount ? <div className="page-nav-arrow"><i class="fas fa-angle-right faded"></i></div> :
-              <Link to={`/gemstones?page=${pageNum+1}`} className="page-nav-arrow"><i class="fas fa-angle-right"></i></Link>
+            { pageNum === pageCount ? <div className="page-nav-arrow"><i className="fas fa-angle-right faded"></i></div> :
+              <Link to={`/gemstones?page=${pageNum+1}`} className="page-nav-arrow"><i className="fas fa-angle-right"></i></Link>
             }
           </div>
         </div>

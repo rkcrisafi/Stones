@@ -7,7 +7,7 @@ class NavBar extends React.Component {
       <div>
         <div className="navbar">
           <div className="hamburger icon">
-            <i class="fas fa-bars"></i>
+            <i className="fas fa-bars"></i>
           </div>
 
           <div className="logo-container">
@@ -17,7 +17,7 @@ class NavBar extends React.Component {
           </div>
 
           <Link className="contact-us icon" to="/contact-us">
-            <i class="fas fa-phone"></i>
+            <i className="fas fa-phone"></i>
           </Link>
 
         </div>
