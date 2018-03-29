@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from '../../react-responsive-carousel/lib/index';
 
 class StoneShow extends React.Component {
   constructor(props) {
