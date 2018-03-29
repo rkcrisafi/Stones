@@ -9,7 +9,7 @@ import SideBar from './sidebar/sidebar';
 
 const App = (props) => {
   return (
-    <div>
+    <div className="app">
       <NavBar />
       <SideBar />
       <AuthRoute path='/login' component={SessionFormContainer}/>

@@ -5,7 +5,11 @@ import { receiveSidebarState } from '../../actions/ui_actions';
 const Sidebar = ({ sidebar, receiveSidebarState }) => {
 
   return (
-    <div>hi</div>
+    <div>
+      <div className={`sidebar-container${sidebar ? ' visible' : ''}`}></div>
+      <div className={`sidebar-overlay${sidebar ? ' visible' : ''}`}
+           onClick={() => receiveSidebarState(false)}></div>
+    </div>
   );
 };
 

@@ -1,12 +1,15 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { receiveSidebarState } from '../../actions/ui_actions';
 
 class NavBar extends React.Component {
   render() {
     return (
       <div>
         <div className="navbar">
-          <div className="hamburger icon">
+          <div className="hamburger icon"
+               onClick={() => this.props.receiveSidebarState(true)}>
             <i className="fas fa-bars"></i>
           </div>
 
@@ -27,4 +30,9 @@ class NavBar extends React.Component {
   }
 }
 
-export default NavBar;
+
+
+export default connect(
+  null,
+  { receiveSidebarState }
+)(NavBar);
