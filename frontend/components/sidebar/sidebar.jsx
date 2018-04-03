@@ -6,7 +6,12 @@ const Sidebar = ({ sidebar, receiveSidebarState }) => {
 
   return (
     <div>
-      <div className={`sidebar-container${sidebar ? ' visible' : ''}`}></div>
+      <div className={`sidebar-container${sidebar ? ' visible' : ''}`}>
+        <div className="hamburger icon"
+             onClick={() => receiveSidebarState(false)}>
+          <i className="fas fa-bars"></i>
+        </div>
+      </div>
       <div className={`sidebar-overlay${sidebar ? ' visible' : ''}`}
            onClick={() => receiveSidebarState(false)}></div>
     </div>
