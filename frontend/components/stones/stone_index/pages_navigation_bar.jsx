@@ -16,7 +16,7 @@ class PagesNavBar extends React.Component {
 
   render () {
     const { rockCount, pageNum } = this.props;
-    let pageCount = Math.ceil(this.props.rockCount / 4 );
+    let pageCount = Math.ceil(this.props.rockCount / 20 );
     let currentPages = pageRange(pageNum, pageCount).map(page => {
       return (
         pageNum === page ?
