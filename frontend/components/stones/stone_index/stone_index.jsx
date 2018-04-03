@@ -8,8 +8,9 @@ class StoneIndex extends React.Component {
   }
 
   componentDidMount() {
-    const { fetchRocks, pageSearch, itemType } = this.props;
+    const { fetchRocks, pageSearch, itemType, receiveSidebarState } = this.props;
     fetchRocks(pageSearch, itemType);
+    receiveSidebarState(false);
   }
 
   componentWillReceiveProps(newProps) {
