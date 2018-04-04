@@ -1,0 +1,48 @@
+.contact-us-content {
+  font-family: 'Roboto', helvetica;
+  max-width: 800px;
+  min-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-us-header {
+  text-align: center;
+}
+
+.contact-us-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.contact-us-content a {
+  text-decoration: underline;
+  color: #0f48AA;
+}
+
+.input input {
+  width: 100%;
+  margin: 10px 0;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid #e5e6e7;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.input textarea {
+  resize: none;
+  width: 80%;
+  height: 150px;
+  padding: 15px;
+  margin: 10px auto;
+  border: 1px solid #e5e6e7;
+  border-radius: 4px;
+  font-size: 15px;
+
+}
+
+.input input::placeholder {
+  color: #e5e6e7;
+}

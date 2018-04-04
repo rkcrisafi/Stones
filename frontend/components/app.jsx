@@ -6,6 +6,7 @@ import StoneIndexContainer from './stones/stone_index/stone_index_container';
 import StoneShowContainer from './stones/stone_show/stone_show_container';
 import NavBar from './navbar/navbar';
 import SideBar from './sidebar/sidebar';
+import ContactUsForm from './contact_us';
 
 const App = (props) => {
   return (
@@ -16,6 +17,7 @@ const App = (props) => {
       <AuthRoute path='/signup' component={SessionFormContainer}/>
       <Route exact path='/gemstones' component={StoneIndexContainer}/>
       <Route exact path='/gemstones/:rockId' component={StoneShowContainer}/>
+      <Route exact path='/contact-us' component={ContactUsForm}/>
     </div>
   );
 };
