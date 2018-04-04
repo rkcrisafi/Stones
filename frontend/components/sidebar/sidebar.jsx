@@ -37,6 +37,10 @@ const Sidebar = ({ curPath, sidebar, receiveSidebarState }) => {
             <Link to="/projects" onClick={(e) => handleClick(e, '/projects')} >Projects</Link>
           </li>
 
+          <li className="sidebar-contact-us-link">
+            <Link to="/contact-us" onClick={(e) => handleClick(e, '/contact-us')} >Contact Us</Link>
+          </li>
+
         </ul>
       </div>
       <div className={`sidebar-overlay${sidebar ? ' visible' : ''}`}
