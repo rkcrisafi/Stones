@@ -18,24 +18,25 @@ const Sidebar = ({ curPath, sidebar, receiveSidebarState }) => {
         </div>
         <ul className="sidebar-links">
           <li>
-            <div className="bullet"><i className="far fa-circle"></i></div>
-            <Link to="/gemstones" onClick={(e) => handleClick(e, '/gemstones')} >GEMSTONE COLLECTION</Link>
+            <Link to="/gemstones" onClick={(e) => handleClick(e, '/gemstones')} >Gemstone Collection</Link>
           </li>
 
           <li>
-            <div className="bullet"><i className="far fa-circle"></i></div>
-            <Link to="/naturalstones" onClick={(e) => handleClick(e, '/naturalstones')} >NATURAL STONE COLLECTION</Link>
+            <Link to="/naturalstones" onClick={(e) => handleClick(e, '/naturalstones')} >Natural Stone Collection</Link>
           </li>
 
           <li>
-            <div className="bullet"><i className="far fa-circle"></i></div>
-            <Link to="/shellstones" onClick={(e) => handleClick(e, '/shellstones')} >SHELLSTONE COLLECTION</Link>
+            <Link to="/shellstones" onClick={(e) => handleClick(e, '/shellstones')} >Shellstone Collection</Link>
           </li>
 
           <li>
-            <div className="bullet"><i className="far fa-circle"></i></div>
-            <Link to="/mosaic-and-tiles" onClick={(e) => handleClick(e, '/mosaic-and-tiles')} >MOSAIC AND TILES</Link>
+            <Link to="/mosaic-and-tiles" onClick={(e) => handleClick(e, '/mosaic-and-tiles')} >Mosaic and Tiles</Link>
           </li>
+
+          <li>
+            <Link to="/projects" onClick={(e) => handleClick(e, '/projects')} >Projects</Link>
+          </li>
+
         </ul>
       </div>
       <div className={`sidebar-overlay${sidebar ? ' visible' : ''}`}

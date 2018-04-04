@@ -42,6 +42,7 @@
 
 .sidebar-links {
   margin-top: 20px;
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -52,13 +53,6 @@
   align-items: center;
 }
 
-.sidebar-links li .bullet {
-  margin: 0 20px 0 25px;
-  color: #3b4e47;
-  font-size: 10px;
-}
-
-.sidebar-links a {
-  color: #3b4e47;
-
+.sidebar-links a:hover {
+  color: red;
 }
