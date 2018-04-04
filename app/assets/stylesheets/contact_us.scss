@@ -34,7 +34,7 @@
 .contact-us-title {
   font-size: 30px;
   font-weight: 700;
-  margin: 30px;
+  margin: 20px;
   color: #3b4e47;
   text-transform: uppercase;
 }
@@ -51,8 +51,8 @@
 
 .input input {
   width: 100%;
-  margin: 10px 0;
-  height: 40px;
+  margin: 7px 0;
+  height: 35px;
   font-size: 15px;
   border: 1px solid #dadada;
   padding-left: var(--padding);
@@ -62,7 +62,7 @@
 .input textarea {
   resize: none;
   width: calc(100% - var(--padding));
-  height: 150px;
+  height: 120px;
   padding: var(--padding);
   margin: 10px auto;
   border: 1px solid #dadada;

@@ -1,9 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { receiveSidebarState } from '../actions/ui_actions';
+
 
 class ContactUsForm extends React.Component {
 
   componentDidMount() {
-    
+    this.props.receiveSidebarState(false);
   }
 
   render() {
@@ -11,7 +14,7 @@ class ContactUsForm extends React.Component {
       <div className="contact-us-content">
         <header className="contact-us-header">
           <h2 className="contact-us-title">Contact Us</h2>
-          <p>
+          <div>
             <div className="contact-us-info">
               <div>Email:</div>
               <a href="mailto:info@collectivestone.com">
@@ -24,7 +27,7 @@ class ContactUsForm extends React.Component {
                 (917) 587-9290
               </a>
             </div>
-            </p>
+          </div>
         </header>
         <div className="contact-us-body">
           <form action="https://formspree.io/info@collectivestone.com" method="post">
@@ -42,4 +45,9 @@ class ContactUsForm extends React.Component {
   }
 }
 
-export default ContactUsForm;
+
+
+export default connect(
+  null,
+  { receiveSidebarState }
+)(ContactUsForm);
