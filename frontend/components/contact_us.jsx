@@ -3,17 +3,27 @@ import React from 'react';
 class ContactUsForm extends React.Component {
 
   componentDidMount() {
-
+    
   }
 
   render() {
     return (
       <div className="contact-us-content">
         <header className="contact-us-header">
-          <h2 className="contact-us-title">Contact Us.</h2>
-          <p>Email us at {' '}
-            <a href="mailto:info@collectivestone.com">info@collectivestone.com</a> {' '}
-              or use the form below.
+          <h2 className="contact-us-title">Contact Us</h2>
+          <p>
+            <div className="contact-us-info">
+              <div>Email:</div>
+              <a href="mailto:info@collectivestone.com">
+                info@collectivestone.com
+              </a>
+            </div>
+            <div className="contact-us-info">
+              <div>Phone:</div>
+              <a href="tel:+19175879290">
+                (917) 587-9290
+              </a>
+            </div>
             </p>
         </header>
         <div className="contact-us-body">
@@ -22,9 +32,9 @@ class ContactUsForm extends React.Component {
             <div className="email input"><input type="email" name="email" placeholder="Email*" required/></div>
             <div className="phone input"><input type="text" name="phone" placeholder="Phone"/></div>
             <div className="message input"><textarea name="message" placeholder="Message*" rows="6" required></textarea></div>
-            <ul className="contact-us-submit">
-              <li><input type="submit"  value="Send Message"/></li>
-            </ul>
+            <div className="contact-us-submit">
+              <input type="submit"  value="Send"/>
+            </div>
           </form>
         </div>
       </div>

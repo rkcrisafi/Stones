@@ -8,18 +8,37 @@
 
 .contact-us-header {
   text-align: center;
+  margin: 30px;
+}
+
+.contact-us-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.contact-us-info div {
+  color: #3b4e47;
+
+}
+
+.contact-us-info a {
+  margin-left: 5px;
 }
 
 .contact-us-header p {
   color: #3b4e47;
+  text-align: right;
 }
 
 .contact-us-title {
   font-size: 30px;
   font-weight: 700;
-  margin: 20px;
+  margin: 30px;
   color: #3b4e47;
+  text-transform: uppercase;
 }
+
 
 .contact-us-content a {
   text-decoration: underline;
@@ -54,4 +73,20 @@
 
 .input ::placeholder {
   color: #dadada;
+}
+
+.contact-us-submit input {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 44px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: #3b4e47;
+  // background-color: #efefef;
+}
+
+.contact-us-submit input:hover {
+  background-color: #efefef;
 }
