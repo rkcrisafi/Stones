@@ -10,15 +10,24 @@
   text-align: center;
 }
 
+.contact-us-header p {
+  color: #3b4e47;
+}
+
 .contact-us-title {
   font-size: 30px;
   font-weight: 700;
   margin: 20px;
+  color: #3b4e47;
 }
 
 .contact-us-content a {
   text-decoration: underline;
   color: #0f48AA;
+}
+
+:root {
+  --padding: 15px;
 }
 
 .input input {
@@ -27,15 +36,15 @@
   height: 40px;
   font-size: 15px;
   border: 1px solid #dadada;
-  padding-left: 10px;
+  padding-left: var(--padding);
   border-radius: 4px;
 }
 
 .input textarea {
   resize: none;
-  width: 80%;
+  width: calc(100% - var(--padding));
   height: 150px;
-  padding: 15px;
+  padding: var(--padding);
   margin: 10px auto;
   border: 1px solid #dadada;
   border-radius: 4px;
