@@ -34,6 +34,10 @@ const Sidebar = ({ curPath, sidebar, receiveSidebarState }) => {
           </li>
 
           <li>
+            <Link to="/art-and-furniture" onClick={(e) => handleClick(e, '/art-and-furniture')} >Art and Furniture</Link>
+          </li>
+
+          <li>
             <Link to="/projects" onClick={(e) => handleClick(e, '/projects')} >Projects</Link>
           </li>
 
