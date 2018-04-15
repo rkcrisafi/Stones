@@ -1,0 +1,2 @@
+class MiscellaneousImage < ApplicationRecord
+end
