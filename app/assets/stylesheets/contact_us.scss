@@ -90,3 +90,16 @@
   background-color: #efefef;
   cursor: pointer;
 }
+
+.carousel .thumbs-wrapper .control-next.control-arrow:before {
+    border-left: 8px solid #000 !important;
+    right: -5px;
+}
+.carousel .thumbs-wrapper .control-prev.control-arrow:before {
+    border-right: 8px solid #000 !important;
+}
+
+
+.thumbs-wrapper button.control-next.control-arrow {
+  right: -5px;
+}

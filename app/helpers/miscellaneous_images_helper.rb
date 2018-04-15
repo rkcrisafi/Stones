@@ -1,0 +1,2 @@
+module MiscellaneousImagesHelper
+end

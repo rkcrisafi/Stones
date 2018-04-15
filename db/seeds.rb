@@ -77,3 +77,38 @@ rock1 = Rock.find_by(name: "Black Agate type C");
 Image.create(rock_id: rock1.id, image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/730fae_a25bcdc0a959470988978fe38b347440_mv2.webp").open)
 Image.create(rock_id: rock1.id, image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/730fae_604d6b3923f44883a5dc158c0287573f_mv2.webp").open)
 Image.create(rock_id: rock1.id, image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/730fae_14376d6a71f040b6b49462e2f8d21449_mv2.webp").open)
+
+
+
+MiscellaneousImage.destroy_all
+
+MiscellaneousImage.create([
+  {
+    item_type: "landing_page",
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/ezgif-3-07c03350eb.jpg").open
+  },
+  {
+    item_type: "landing_page",
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/69681135-rocks-wallpapers.jpg").open
+  },
+  {
+    item_type: "landing_page",
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/68469904-rocks-wallpapers.jpg").open
+  },
+  {
+    item_type: "landing_page",
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/69356316-rocks-wallpapers.jpg").open
+  },
+  {
+    item_type: "landing_page",
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/68489005-rocks-wallpapers.jpg").open
+  },
+  {
+    item_type: "landing_page",
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/69593409-rocks-wallpapers.jpg").open
+  },
+  {
+    item_type: "landing_page",
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/68665034-rocks-wallpapers.jpg").open
+  }
+])
