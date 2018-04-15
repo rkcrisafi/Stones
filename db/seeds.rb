@@ -84,31 +84,31 @@ MiscellaneousImage.destroy_all
 
 MiscellaneousImage.create([
   {
-    type: "landing_page",
+    item_type: "landing_page",
     image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/ezgif-3-07c03350eb.jpg").open
   },
   {
-    type: "landing_page",
+    item_type: "landing_page",
     image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/69681135-rocks-wallpapers.jpg").open
   },
   {
-    type: "landing_page",
+    item_type: "landing_page",
     image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/68469904-rocks-wallpapers.jpg").open
   },
   {
-    type: "landing_page",
+    item_type: "landing_page",
     image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/69356316-rocks-wallpapers.jpg").open
   },
   {
-    type: "landing_page",
+    item_type: "landing_page",
     image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/68489005-rocks-wallpapers.jpg").open
   },
   {
-    type: "landing_page",
+    item_type: "landing_page",
     image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/69593409-rocks-wallpapers.jpg").open
   },
   {
-    type: "landing_page",
+    item_type: "landing_page",
     image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/68665034-rocks-wallpapers.jpg").open
   }
 ])

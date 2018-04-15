@@ -1,10 +1,10 @@
 class MiscellaneousImage < ApplicationRecord
-  validates :type, presence: true
+  validates :item_type, presence: true
 
   before_validation :ensure_order
 
   def ensure_order
-    count = MiscellaneousImage.where(type: "landing_page").count
+    count = MiscellaneousImage.where(item_type: "landing_page").count
     # if self.order != nil
     #   readjust order
     # else
