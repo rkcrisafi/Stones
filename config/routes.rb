@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :rocks, only: [:index, :show] do
       resources :images, only: [:index]
     end
+    resources :miscellaneous_images, only: [:index]
   end
 
 
