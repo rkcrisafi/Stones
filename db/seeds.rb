@@ -80,9 +80,9 @@ Image.create(rock_id: rock1.id, image: URI.parse("https://s3.amazonaws.com/colle
 
 
 
-MicellaneousImage.destroy_all
+MiscellaneousImage.destroy_all
 
-MicellaneousImage.create([
+MiscellaneousImage.create([
   {
     type: "landing_page",
     image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/ezgif-3-07c03350eb.jpg").open
@@ -111,4 +111,4 @@ MicellaneousImage.create([
     type: "landing_page",
     image: URI.parse("https://s3.amazonaws.com/collectivestone-dev/images/images/000/000/001/original/68665034-rocks-wallpapers.jpg").open
   }
-)
+])
