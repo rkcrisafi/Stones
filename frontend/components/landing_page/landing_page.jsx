@@ -17,8 +17,9 @@ class LandingPage extends React.Component {
 
         { landingPageImages.length === 0 ? null : <Carousel
           showArrows={ true }
-          autoPlay={ true }
+
           interval={ 5000 }
+          stopOnHover={ false }
           showIndicators={ false }
           swipeable={ true }
           infiniteLoop={ true }
@@ -29,8 +30,8 @@ class LandingPage extends React.Component {
           {
             landingPageImages.map((img, i) => {
               return (
-                <div key={ i }>
-                  <img src={ img.img } />
+                <div key={ i } style={{ height: '100%', width: '100%', overflow: 'hidden' }} >
+                  <img style={{ height: '90vh', objectFit: 'cover' }} src={ img.img } />
                 </div>
               );
             })
