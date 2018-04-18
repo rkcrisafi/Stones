@@ -12,5 +12,5 @@ export default combineReducers({
   rocks: RockReducer,
   images: ImageReducer,
   ui: UIReducer,
-  miscellaneous_images: MiscellaneousImagesReducer,
+  miscellaneousImages: MiscellaneousImagesReducer,
 });

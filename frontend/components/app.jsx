@@ -7,17 +7,19 @@ import StoneShowContainer from './stones/stone_show/stone_show_container';
 import NavBar from './navbar/navbar';
 import SideBar from './sidebar/sidebar';
 import ContactUsForm from './contact_us';
+import LandingPageContainer from './landing_page/landing_page';
 
 const App = (props) => {
   return (
     <div className="app">
       <NavBar />
       <SideBar />
-      <AuthRoute path='/login' component={SessionFormContainer}/>
-      <AuthRoute path='/signup' component={SessionFormContainer}/>
-      <Route exact path='/gemstones' component={StoneIndexContainer}/>
-      <Route exact path='/gemstones/:rockId' component={StoneShowContainer}/>
-      <Route exact path='/contact-us' component={ContactUsForm}/>
+      <AuthRoute path='/login' component={ SessionFormContainer } />
+      <AuthRoute path='/signup' component={ SessionFormContainer } />
+      <Route exact path='/' component={ LandingPageContainer } />
+      <Route exact path='/gemstones' component={ StoneIndexContainer } />
+      <Route exact path='/gemstones/:rockId' component={ StoneShowContainer } />
+      <Route exact path='/contact-us' component={ ContactUsForm } />
     </div>
   );
 };
