@@ -14,17 +14,18 @@ class LandingPage extends React.Component {
     const { landingPageImages } = this.props;
     return (
       <div>
-        <Carousel
-        showArrows={ true }
-        autoPlay={ true }
-        interval={ 5000 }
-        showIndicators={ false }
-        swipeable={ true }
-        infiniteLoop={ true }
-        emulateTouch={ true }
-        showStatus={ false }
-        dynamicHeight={ true }
-        showThumbs={ false }>
+
+        { landingPageImages.length === 0 ? null : <Carousel
+          showArrows={ true }
+          autoPlay={ true }
+          interval={ 5000 }
+          showIndicators={ false }
+          swipeable={ true }
+          infiniteLoop={ true }
+          emulateTouch={ true }
+          showStatus={ false }
+          dynamicHeight={ true }
+          showThumbs={ false }>
           {
             landingPageImages.map((img, i) => {
               return (
@@ -34,7 +35,7 @@ class LandingPage extends React.Component {
               );
             })
           }
-        </Carousel>
+        </Carousel>}
       </div>
     );
   }
