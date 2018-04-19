@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import { AuthRoute } from '../util/route_util';
 import SessionFormContainer from './sessions/session_form_container';
 import StoneIndexContainer from './stones/stone_index/stone_index_container';
@@ -21,9 +21,9 @@ const App = (props) => {
       <Route exact path='/gemstones' component={ StoneIndexContainer } />
       <Route exact path='/gemstones/:rockId' component={ StoneShowContainer } />
       <Route exact path='/contact-us' component={ ContactUsForm } />
-      <Footer />
+      <Footer position={ props.location.pathname === "/" ? 'absolute' : 'normal' } />
     </div>
   );
 };
 
-export default App;
+export default withRouter(App);
