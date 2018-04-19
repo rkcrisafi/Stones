@@ -8,6 +8,7 @@ import NavBar from './navbar/navbar';
 import SideBar from './sidebar/sidebar';
 import ContactUsForm from './contact_us';
 import LandingPageContainer from './landing_page/landing_page';
+import Footer from './footer/footer';
 
 const App = (props) => {
   return (
@@ -20,6 +21,7 @@ const App = (props) => {
       <Route exact path='/gemstones' component={ StoneIndexContainer } />
       <Route exact path='/gemstones/:rockId' component={ StoneShowContainer } />
       <Route exact path='/contact-us' component={ ContactUsForm } />
+      <Footer />
     </div>
   );
 };

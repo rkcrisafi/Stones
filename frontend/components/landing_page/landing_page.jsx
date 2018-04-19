@@ -13,7 +13,7 @@ class LandingPage extends React.Component {
   render() {
     const { landingPageImages } = this.props;
     return (
-      <div style={{ overflow: 'hidden', height: '100%'}}>
+      <div className="landing-page-container">
 
         { landingPageImages.length === 0 ? null : <Carousel
           showArrows={ true }
@@ -22,6 +22,7 @@ class LandingPage extends React.Component {
           showIndicators={ false }
           swipeable={ true }
           infiniteLoop={ true }
+          autoPlay={ true }
           emulateTouch={ true }
           showStatus={ false }
           dynamicHeight={ true }
@@ -29,8 +30,8 @@ class LandingPage extends React.Component {
           {
             landingPageImages.map((img, i) => {
               return (
-                <div key={ i } style={{ height: '100%', width: '100%', overflow: 'hidden' }} >
-                  <img style={{ height: '100%', objectFit: 'cover' }} src={ img.img } />
+                <div key={ i } >
+                  <img className="carousel-img" src={ img.img } />
                 </div>
               );
             })
