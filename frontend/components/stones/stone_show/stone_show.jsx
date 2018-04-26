@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { Carousel } from '../../react-responsive-carousel/lib/index';
 
 
@@ -100,9 +100,12 @@ class StoneShow extends React.Component {
                 (<div className="zoom-img-container" style={{ height: imgHeight }}>
                   <img style={{ width: zoomWidth, top: zoomTop, left: zoomLeft }} src={ zoomUrl } />
                 </div>) :
-                (<div>
-                  <div className="rock-name">{rock.name}</div>
-                  <div className="rock-description">{rock.description}</div>
+                (<div className="rock-full-description">
+                  <div>
+                    <div className="rock-name">{rock.name}</div>
+                    <div className="rock-description">{rock.description}</div>
+                  </div>
+                    <Link to={`/contact-us/${rock.id}`} className="contact-us-rock-id-link">Contact Us</Link>
                 </div>)
               }
             </div>

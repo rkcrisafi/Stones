@@ -1,16 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { receiveSidebarState } from '../actions/ui_actions';
+import { fetchRock } from '../actions/rock_actions';
 
 
 class ContactUsForm extends React.Component {
 
   componentDidMount() {
+    const { rockId, receiveSidebarState, fetchRock } = this.props;
     $('html,body').scrollTop(0);
-    this.props.receiveSidebarState(false);
+    receiveSidebarState(false);
+    if (rockId) {
+      fetchRock(rockId);
+    }
   }
 
   render() {
+    let text = this.props.rock ? `Hey there! I'm interested in getting more information about ${this.props.rock.name}.` : '';
     return (
       <div className="contact-us-content">
         <header className="contact-us-header">
@@ -35,7 +41,7 @@ class ContactUsForm extends React.Component {
             <div className="name input"><input type="text" name="name" placeholder="Name*" required/></div>
             <div className="email input"><input type="email" name="email" placeholder="Email*" required/></div>
             <div className="phone input"><input type="text" name="phone" placeholder="Phone"/></div>
-            <div className="message input"><textarea name="message" placeholder="Message*" rows="6" required></textarea></div>
+            <div className="message input"><textarea name="message" value={text} placeholder="Message*" rows="6" required></textarea></div>
             <div className="contact-us-submit">
               <input type="submit"  value="Send"/>
             </div>
@@ -46,9 +52,19 @@ class ContactUsForm extends React.Component {
   }
 }
 
+const mapStateToProps = (state, ownProps) => {
+  const rockId = ownProps.match.params.rockId;
+  const rock = rockId ? state.rocks.rocks[rockId] : null;
+
+  return {
+    rockId,
+    rock,
+  };
+};
+
 
 
 export default connect(
-  null,
-  { receiveSidebarState }
+  mapStateToProps,
+  { receiveSidebarState, fetchRock }
 )(ContactUsForm);

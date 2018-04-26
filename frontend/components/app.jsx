@@ -21,6 +21,7 @@ const App = (props) => {
       <Route exact path='/gemstones' component={ StoneIndexContainer } />
       <Route exact path='/gemstones/:rockId' component={ StoneShowContainer } />
       <Route exact path='/contact-us' component={ ContactUsForm } />
+      <Route exact path='/contact-us/:rockId' component={ ContactUsForm } />
       <Footer />
     </div>
   );
