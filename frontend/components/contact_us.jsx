@@ -6,6 +6,7 @@ import { receiveSidebarState } from '../actions/ui_actions';
 class ContactUsForm extends React.Component {
 
   componentDidMount() {
+    $('html,body').scrollTop(0);
     this.props.receiveSidebarState(false);
   }
 

@@ -8,6 +8,7 @@ class StoneIndex extends React.Component {
   }
 
   componentDidMount() {
+    $('html,body').scrollTop(0);
     const { fetchRocks, pageSearch, itemType, receiveSidebarState } = this.props;
     fetchRocks(pageSearch, itemType);
     receiveSidebarState(false);
