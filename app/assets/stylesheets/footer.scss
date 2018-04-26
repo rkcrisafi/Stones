@@ -8,12 +8,23 @@
   -moz-box-shadow: 0 -0.5px 0.5px 0px #bbb;
   box-shadow: 0 -0.5px 0.5px 0px #bbb;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: absolute;
   bottom: 0;
   left: 0;
+
 }
 
-// .footer-absolute {
-// }
+.footer-social-media-links svg {
+  font-size: 25px;
+  color: #3b4e47;
+}
+
+.footer-social-media-links a {
+  margin-right: 5px;
+}
+
+.footer-social-media-links a:last-child {
+  margin-right: 20px;
+}
