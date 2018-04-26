@@ -36,9 +36,13 @@
   color: inherit;
 }
 
-.contact-us-rock-id-link {
+.stone-show-links {
+  // display: flex;
+}
+
+.contact-us-rock-id-link, .tech-specifications {
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 200px;
   height: 44px;
   font-size: 18px;
@@ -53,7 +57,8 @@
   align-items: center;
 }
 
-.contact-us-rock-id-link:hover {
+
+.contact-us-rock-id-link:hover, .tech-specifications:hover {
   background-color: #efefef;
   cursor: pointer;
 }

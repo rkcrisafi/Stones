@@ -7,7 +7,7 @@ class StoneShow extends React.Component {
   constructor(props) {
     super(props);
     this.imgContainer = [];
-    this.state = { zoomToggle: false, zoomUrl: null, boxWidth: null, boxHeight: null, boxTop: null, boxLeft: null, zoomTop: null, zoomLeft: null, zoomWidth: null, zoomAmt: 3, targetIndex: null,
+    this.state = { zoomToggle: false, zoomUrl: null, boxWidth: null, boxHeight: null, boxTop: null, boxLeft: null, zoomTop: null, zoomLeft: null, zoomWidth: null, zoomAmt: 2, targetIndex: null,
     imgHeight: null };
   }
 
@@ -105,7 +105,10 @@ class StoneShow extends React.Component {
                     <div className="rock-name">{rock.name}</div>
                     <div className="rock-description">{rock.description}</div>
                   </div>
+                  <div className="stone-show-links">
                     <Link to={`/contact-us/${rock.id}`} className="contact-us-rock-id-link">Contact Us</Link>
+                    <Link to="/technical-specifications" className="tech-specifications">Technical Specs</Link>
+                  </div>
                 </div>)
               }
             </div>
