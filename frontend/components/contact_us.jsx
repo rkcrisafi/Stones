@@ -30,8 +30,8 @@ class ContactUsForm extends React.Component {
             </div>
             <div className="contact-us-info">
               <div>Phone:</div>
-              <a href="tel:+19175879290">
-                (917) 587-9290
+              <a href="tel:+19172922898">
+                (917) 292-2898
               </a>
             </div>
           </div>
