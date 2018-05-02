@@ -11,8 +11,8 @@
   padding: 10px 0;
 }
 
-.selected-page {
-  font-weight: 300;
+.selected-page.page-number {
+  font-weight: 400;
   color: inherit;
 }
 
@@ -44,4 +44,5 @@
 .page-number {
   color: inherit;
   padding: 0 2px;
+  font-weight: 300;
 }
