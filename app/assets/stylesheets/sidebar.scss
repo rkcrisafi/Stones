@@ -52,11 +52,30 @@
   align-items: center;
 }
 
-.sidebar-links a:hover {
+.sidebar-links a:hover, .sidebar-links .sidebar-link:hover {
   color: red;
+  cursor: pointer;
 }
 
 li.sidebar-contact-us-link {
   margin-top: 40px;
   font-weight: 400;
+}
+
+li.sidebar-dropdown-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.sidebar-dropdown-links {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 0 25px;
+}
+
+.sidebar-dropdown-links a {
+  margin-top: 8px;
+  font-weight: 200;
 }
