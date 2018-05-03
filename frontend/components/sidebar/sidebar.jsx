@@ -2,9 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import { receiveSidebarState } from '../../actions/ui_actions';
+import SidebarDropDown from './sidebar_dropdown';
 
 const Sidebar = ({ curPath, sidebar, receiveSidebarState }) => {
   const handleClick = (e, linkPath) => {
+    debugger
     if (curPath === linkPath) {
       location.reload();
     }
@@ -21,9 +23,11 @@ const Sidebar = ({ curPath, sidebar, receiveSidebarState }) => {
             <Link to="/gemstones" onClick={(e) => handleClick(e, '/gemstones')} >Gemstone Collection</Link>
           </li>
 
-          <li>
-            <Link to="/naturalstones" onClick={(e) => handleClick(e, '/naturalstones')} >Natural Stone Collection</Link>
-          </li>
+          <SidebarDropDown
+            text="Natural Stone Collection"
+            path="/naturalstones"
+            subLinkClick={(e, subLink) => handleClick(e, subLink)}
+            subTypes={ ['marble', 'granite', 'onyx']} />
 
           <li>
             <Link to="/shellstones" onClick={(e) => handleClick(e, '/shellstones')} >Shellstone Collection</Link>
@@ -53,10 +57,11 @@ const Sidebar = ({ curPath, sidebar, receiveSidebarState }) => {
   );
 };
 
-const mapStateToProps = (state, ownProps) =>  ({
-  sidebar: state.ui.sidebar,
-  curPath: ownProps.location.pathname,
-});
+const mapStateToProps = (state, ownProps) =>  {
+  debugger
+  return {sidebar: state.ui.sidebar,
+  curPath: ownProps.location.pathname,}
+};
 
 export default withRouter(connect(
   mapStateToProps,
