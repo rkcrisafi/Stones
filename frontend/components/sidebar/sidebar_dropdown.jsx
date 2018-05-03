@@ -9,8 +9,14 @@ class SidebarDropDown extends React.Component {
     this.state = { isDown: false };
   }
 
+  handleClick(e, linkPath, routeLocation) {
+    if (routeLocation.pathname + routeLocation.search === linkPath) {
+      location.reload();
+    }
+  }
+
   render() {
-    const { text, path, subTypes, subLinkClick } = this.props;
+    const { text, path, subTypes, subLinkClick, location } = this.props;
     const { isDown } = this.state;
     return (
       <li>
@@ -18,7 +24,7 @@ class SidebarDropDown extends React.Component {
         <div>
           { !isDown ? null : (
             subTypes.map(subType => (
-              <Link onClick={ e => subLinkClick(e, `${path}?sub-type=${subType}`) } to={ `${path}?sub-type=${subType}` }>{ subType }</Link>
+              <Link onClick={ e => this.handleClick(e, `${path}?sub-type=${subType}`, location) } to={ `${path}?sub-type=${subType}` }>{ subType }</Link>
             ))
           )}
         </div>
