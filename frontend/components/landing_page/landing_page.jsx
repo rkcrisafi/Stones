@@ -26,7 +26,8 @@ class LandingPage extends React.Component {
           emulateTouch={ true }
           showStatus={ false }
           dynamicHeight={ true }
-          showThumbs={ false }>
+          showThumbs={ false }
+          transitionTime={ 700 }>
           {
             landingPageImages.map((img, i) => {
               return (
