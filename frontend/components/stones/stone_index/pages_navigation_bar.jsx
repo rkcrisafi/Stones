@@ -1,6 +1,8 @@
 import { connect } from 'react-redux';
 import { withRouter, Link } from 'react-router-dom';
 import React from 'react';
+import { clearImages } from '../../../actions/miscellaneous_images_actions';
+
 
 const pageRange = (cur, total) => {
   if (total <= 5 || cur <= 2) {
@@ -21,7 +23,7 @@ class PagesNavBar extends React.Component {
       return (
         pageNum === page ?
         <div key={ page } className="page-number selected-page">{ page }</div> :
-        <Link to={`/gemstones?page=${page}`} key={ page } className="page-number">{ page }</Link>
+        <Link to={ `/gemstones?page=${page}` } key={ page } className="page-number">{ page }</Link>
       );
     });
     return (
@@ -60,5 +62,5 @@ const mapDispatchToProps = null;
 
 export default withRouter(connect(
   mapStateToProps,
-  mapDispatchToProps
+  { clearImages }
 )(PagesNavBar));

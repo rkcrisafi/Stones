@@ -330,6 +330,8 @@ var Carousel = function (_Component) {
         value: function componentWillReceiveProps(nextProps) {
             if (nextProps.selectedItem !== this.state.selectedItem) {
                 this.updateSizes();
+                //hovering over main carousel breaks with our zoom feature
+                //have to disable this line
                 // this.moveTo(nextProps.selectedItem);
             }
 

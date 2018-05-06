@@ -13,7 +13,8 @@ class StoneShow extends React.Component {
 
   componentDidMount() {
     $('html,body').scrollTop(0);
-    const { fetchRock, rockId, fetchImages } = this.props;
+    const { fetchRock, rockId, fetchImages, clearImages } = this.props;
+    clearImages();
     fetchRock(rockId);
     fetchImages(rockId);
   }

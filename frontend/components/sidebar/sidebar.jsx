@@ -26,7 +26,7 @@ const Sidebar = ({ location, sidebar, receiveSidebarState }) => {
             text="Natural Stone Collection"
             path="/naturalstones"
             location={ location }
-            subTypes={ ['marble', 'granite', 'onyx']} />
+            subTypes={ ['marble', 'granite', 'onyx'] } />
 
           <li>
             <Link to="/shellstones" onClick={(e) => handleClick(e, '/shellstones')} >Shellstone Collection</Link>

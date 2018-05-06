@@ -9,6 +9,7 @@ const mapStateToProps = (state, ownProps) => {
   if (pathname.indexOf('/gemstones') === 0) {
     itemType = 'gem';
   }
+  console.log(ownProps.location.search);
   return {
     pageSearch: ownProps.location.search,
     rocks: Object.keys(state.rocks.rocks).map(id => state.rocks.rocks[id]),
