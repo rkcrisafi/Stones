@@ -7,9 +7,9 @@ const StoneItem = (props) => {
     <div className="stone-index-item">
       <Link to={`/gemstones/${rock.id}`}>
         <div className="stone-index-item-image">
-          <img className={`${visible ? "" : "hide-image"}`} onLoad={ () => onLoaded() } src={rock.img}/>
+          <img className={`${visible ? "" : "hide-item"}`} onLoad={ () => onLoaded() } src={rock.img}/>
         </div>
-        <div className="stone-index-item-name">{rock.name}</div>
+        <div className={`${visible ? "" : 'hide-item '}stone-index-item-name`}>{rock.name}</div>
       </Link>
     </div>
   );

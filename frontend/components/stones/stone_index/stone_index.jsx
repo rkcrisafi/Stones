@@ -1,6 +1,7 @@
 import React from 'react';
 import StoneItem from './stone_index_item';
 import PagesNavBarContainer from './pages_navigation_bar';
+import Loader from '../../common/loader';
 
 class StoneIndex extends React.Component {
   constructor(props) {
@@ -28,31 +29,16 @@ class StoneIndex extends React.Component {
   render () {
     const { imgCount, imgsLoaded } = this.state;
     return (
-      <div class="overlay">
-        <div className="stone-index">
-          <PagesNavBarContainer rockCount={ this.props.totalRockCount }/>
-          { imgCount === imgsLoaded && this.props.curPageRockCount ? null :
-              <div class="spinner center">
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-              </div>
-          }
-          <ol className="stone-index-list">
-            { this.props.rocks.map((rock, id) => {
-              return <StoneItem onLoaded={ () => this.setState({ imgsLoaded: imgsLoaded + 1 }) } visible={ imgCount === imgsLoaded } key={ id } rock={ rock }/>;
-            })}
-          </ol>
-        </div>
+      <div className="stone-index">
+        <PagesNavBarContainer rockCount={ this.props.totalRockCount }/>
+        { imgCount === imgsLoaded && this.props.curPageRockCount ? null :
+            <Loader />
+        }
+        <ol className="stone-index-list">
+          { this.props.rocks.map((rock, id) => {
+            return <StoneItem onLoaded={ () => this.setState({ imgsLoaded: imgsLoaded + 1 }) } visible={ imgCount === imgsLoaded } key={ id } rock={ rock }/>;
+          })}
+        </ol>
       </div>
     );
   }
