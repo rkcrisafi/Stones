@@ -9,12 +9,13 @@ const mapStateToProps = (state, ownProps) => {
   if (pathname.indexOf('/gemstones') === 0) {
     itemType = 'gem';
   }
-  console.log(ownProps.location.search);
+  const rocks = Object.keys(state.rocks.rocks).map(id => state.rocks.rocks[id]);
   return {
     pageSearch: ownProps.location.search,
-    rocks: Object.keys(state.rocks.rocks).map(id => state.rocks.rocks[id]),
+    rocks,
     itemType,
-    rockCount: state.rocks.rockCount,
+    totalRockCount: state.rocks.rockCount,
+    curPageRockCount: rocks.length,
   };
 };
 
