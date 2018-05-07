@@ -4,7 +4,7 @@ const ImageReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_IMAGES:
-      return action.images;
+      return Object.assign({}, state, action.images);
     case CLEAR_IMAGES:
       return {};
     default:
