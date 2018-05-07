@@ -30,7 +30,24 @@ class StoneIndex extends React.Component {
     return (
       <div className="stone-index">
         <PagesNavBarContainer rockCount={ this.props.totalRockCount }/>
-        { imgCount === imgsLoaded ? null : <div className="loader"></div> }
+        { imgCount === imgsLoaded ? null :
+          <div class="overlay">
+            <div class="spinner center">
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+              <div class="spinner-blade"></div>
+            </div>
+          </div>
+ }
         <ol className="stone-index-list">
           { this.props.rocks.map((rock, id) => {
             return <StoneItem onLoaded={ () => this.setState({ imgsLoaded: imgsLoaded + 1 }) } visible={ imgCount === imgsLoaded } key={ id } rock={ rock }/>;
