@@ -28,31 +28,31 @@ class StoneIndex extends React.Component {
   render () {
     const { imgCount, imgsLoaded } = this.state;
     return (
-      <div className="stone-index">
-        <PagesNavBarContainer rockCount={ this.props.totalRockCount }/>
-        { imgCount === imgsLoaded ? null :
-          <div class="overlay">
-            <div class="spinner center">
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-              <div class="spinner-blade"></div>
-            </div>
-          </div>
- }
-        <ol className="stone-index-list">
-          { this.props.rocks.map((rock, id) => {
-            return <StoneItem onLoaded={ () => this.setState({ imgsLoaded: imgsLoaded + 1 }) } visible={ imgCount === imgsLoaded } key={ id } rock={ rock }/>;
-          })}
-        </ol>
+      <div class="overlay">
+        <div className="stone-index">
+          <PagesNavBarContainer rockCount={ this.props.totalRockCount }/>
+          { imgCount === imgsLoaded && this.props.curPageRockCount ? null :
+              <div class="spinner center">
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+              </div>
+          }
+          <ol className="stone-index-list">
+            { this.props.rocks.map((rock, id) => {
+              return <StoneItem onLoaded={ () => this.setState({ imgsLoaded: imgsLoaded + 1 }) } visible={ imgCount === imgsLoaded } key={ id } rock={ rock }/>;
+            })}
+          </ol>
+        </div>
       </div>
     );
   }

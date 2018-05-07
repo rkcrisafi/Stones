@@ -20,11 +20,6 @@ html, body {
 $spinner-color: #69717d !default;
 $spinner-size: 48px !default;
 
-.overlay {
-  background: rgba(black,.8);
-  height: 100vh;
-}
-
 .spinner {
   font-size: $spinner-size;
   position: relative;
@@ -35,8 +30,8 @@ $spinner-size: 48px !default;
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: 0;
+    top: 150px;
+    // bottom: 0;
     margin: auto;
 
     .spinner-blade {
