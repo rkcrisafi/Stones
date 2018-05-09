@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchRocks, fetchRock } from '../../../actions/rock_actions';
+import { fetchRocks, fetchRock, clearRocks } from '../../../actions/rock_actions';
 import { receiveSidebarState } from '../../../actions/ui_actions';
 import StoneIndex from './stone_index';
 
@@ -23,6 +23,7 @@ const mapDispatchToProps = dispatch => ({
   fetchRocks: (query, itemType) => dispatch(fetchRocks(query, itemType)),
   fetchRock: rockId => dispatch(fetchRock(rockId)),
   receiveSidebarState: (value) => dispatch(receiveSidebarState(value)),
+  clearRocks: () => dispatch(clearRocks()),
 });
 
 export default connect(

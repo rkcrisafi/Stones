@@ -11,7 +11,8 @@ class StoneIndex extends React.Component {
 
   componentDidMount() {
     $('html,body').scrollTop(0);
-    const { fetchRocks, pageSearch, itemType, receiveSidebarState } = this.props;
+    const { fetchRocks, pageSearch, itemType, receiveSidebarState, clearRocks } = this.props;
+    clearRocks();
     fetchRocks(pageSearch, itemType);
     receiveSidebarState(false);
   }
@@ -20,6 +21,7 @@ class StoneIndex extends React.Component {
     if (newProps.pageSearch !== this.props.pageSearch) {
       this.props.fetchRocks(newProps.pageSearch, newProps.itemType);
     }
+    // debugger
     if (newProps.curPageRockCount !== this.props.curPageRockCount) {
       this.setState({ imgCount: newProps.curPageRockCount, imgsLoaded: 0 });
     }
