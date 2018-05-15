@@ -9,6 +9,7 @@ import SideBar from './sidebar/sidebar';
 import ContactUsForm from './contact_us';
 import LandingPageContainer from './landing_page/landing_page';
 import Footer from './footer/footer';
+import TechSpecs from './tech_specs';
 
 const App = (props) => {
   return (
@@ -22,6 +23,7 @@ const App = (props) => {
       <Route exact path='/gemstones/:rockId' component={ StoneShowContainer } />
       <Route exact path='/contact-us' component={ ContactUsForm } />
       <Route exact path='/contact-us/:rockId' component={ ContactUsForm } />
+      <Route exact path='/technical-specifications' component={ TechSpecs } />
       <Footer />
     </div>
   );
