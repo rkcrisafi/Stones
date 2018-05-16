@@ -38,7 +38,15 @@
 .page-nav-arrow {
   color: inherit;
   padding: 0 5px;
-  font-size: 9px;
+  font-size: 12px;
+}
+
+.arrow {
+  transform: scale(.7, 1.5);
+  -webkit-transform: scale(.7, 1.5); /* Safari and Chrome */
+  -moz-transform: scale(.7, 1.5); /* Firefox */
+  -ms-transform: scale(.7, 1.5); /* IE 9+ */
+  -o-transform: scale(.7, 1.5); /* Opera */
 }
 
 .page-number {
