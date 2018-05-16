@@ -15,11 +15,20 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+/* @import 'fonts'; */
+
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: font-url('../fonts/glyphicons-halflings-regular.eot');
-  src: font-url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), font-url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), font-url('../fonts/glyphicons-halflings-regular.woff') format('woff'), font-url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), font-url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url(font-path('glyphicons-halflings-regular.eot'));
+  src: url(font-path('glyphicons-halflings-regular.eot?#iefix')) format('embedded-opentype'), url(font-path('glyphicons-halflings-regular.woff2')) format('woff2'), url(font-path('glyphicons-halflings-regular.woff')) format('woff'), url(font-path('glyphicons-halflings-regular.ttf')) format('truetype'), url(font-path('glyphicons-halflings-regular.svg')) format('svg');
 }
+
+/* @import "../../../fonts/glyphicons-halflings-regular.eot";
+@import "../../../fonts/glyphicons-halflings-regular.svg";
+@import "../../../fonts/glyphicons-halflings-regular.ttf";
+@import "../../../fonts/glyphicons-halflings-regular.woff";
+@import "../../../fonts/glyphicons-halflings-regular.woff2"; */
+
 .glyphicon {
   position: relative;
   top: 1px;

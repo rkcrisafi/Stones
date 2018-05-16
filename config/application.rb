@@ -6,9 +6,11 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
 module Stones
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     config.load_defaults 5.1
     config.paperclip_defaults = {
       :storage => :s3,
