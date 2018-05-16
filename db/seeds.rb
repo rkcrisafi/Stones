@@ -207,6 +207,512 @@ Rock.create!([{
     image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Gemstone+sharp+image-Tracy/Other+semi+precious+gemstone/Yellow+Fossil/Yellow+Fossil+(1).jpg").open
   }])
 
+
+  Rock.create!([{
+      name: "Aspen White",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Aspen+White.jpg").open
+    },
+    {
+      name: "Balmoral",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Balmoral.jpg").open
+    },
+    {
+      name: "Black Galaxy",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Black+Galaxy.jpg").open
+    },
+    {
+      name: "Blue Fantasy",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Blue+Fantasy+.jpg").open
+    },
+    {
+      name: "Blue Pearl",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Blue+Pearl.jpg").open
+    },
+    {
+      name: "Cats Eye",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Cats+Eye.jpg").open
+    },
+    {
+      name: "Colonial Fantasy",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Colonial+Fantasy.jpg").open
+    },
+    {
+      name: "Cosmos",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Cosmos.jpg").open
+    },
+    {
+      name: "Emerald Pearl",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Emerald+Pearl.jpg").open
+    },
+    {
+      name: "Flash Green",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Flash+Green.jpg").open
+    },
+    {
+      name: "Golden Fantasy",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Golden+Fantasy.jpg").open
+    },
+    {
+      name: "Griz Mandaris",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Griz+Mandaris.jpg").open
+    },
+    {
+      name: "Hasan Green",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Hasan+Green+.jpg").open
+    },
+    {
+      name: "Imperial Red",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Imperial+Red.jpg").open
+    },
+    {
+      name: "Imperial White",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Imperial+White.jpg").open
+    },
+    {
+      name: "Ivory Brown",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Ivory+Brown.jpg").open
+    },
+    {
+      name: "Juparana China",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Juparana+China.jpg").open
+    },
+    {
+      name: "Juparana Columbo",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Juparana+Columbo.jpg").open
+    },
+    {
+      name: "Juparana India",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Juparana+India.jpg").open
+    },
+    {
+      name: "Kashmir Gold",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Kashmir+Gold.jpg").open
+    },
+    {
+      name: "Kashmir White",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Kasmir+White.jpg").open
+    },
+    {
+      name: "Madura Gold",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Madura+Gold.jpg").open
+    },
+    {
+      name: "Maple Red",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Maple+Red+.jpg").open
+    },
+    {
+      name: "Matrix Leather",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Matrix+Leather.jpg").open
+    },
+    {
+      name: "Miracle White",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Miracle+White.jpg").open
+    },
+    {
+      name: "Multicolor Red",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Multicolor+Red.jpg").open
+    },
+    {
+      name: "Notte D'oro",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Notte+D'oro.jpg").open
+    },
+    {
+      name: "Ouro Brazil",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Ouro+Brazil+.jpg").open
+    },
+    {
+      name: "Paradiso Bash",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Paradiso+Bash.jpg").open
+    },
+    {
+      name: "Paradiso Classic",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Paradiso+Classic+.jpg").open
+    },
+    {
+      name: "Pretoria Black",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'granite',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Granite+Pic/Pretoria+Black+.jpg").open
+    },
+    {
+      name: "Arabescato Vagle",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Arabescato+Vagle..png").open
+    },
+    {
+      name: "Bianco Dolomiti",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Bianco+Dolomiti..png").open
+    },
+    {
+      name: "Bianco Perla Beige",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Bianco+Perla+Beige..png").open
+    },
+    {
+      name: "Bianco Sivec",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Bianco+Sivec..png").open
+    },
+    {
+      name: "Botticino Ivory",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Botticino+Ivory..png").open
+    },
+    {
+      name: "Calacatta Caldia",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Calacatta+Caldia..png").open
+    },
+    {
+      name: "Cote D'Azur",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Cote+D'Azur..png").open
+    },
+    {
+      name: "Crema Delicato",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Crema+Delicato..png").open
+    },
+    {
+      name: "Crema Mafil",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Crema+Mafil..jpg").open
+    },
+    {
+      name: "Diana Royal Beige",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Diana+Royal+Beige..png").open
+    },
+    {
+      name: "Drago",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Drago..jpg").open
+    },
+    {
+      name: "Gray Emperador",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Gray+Emperador..png").open
+    },
+    {
+      name: "Ionis Beige",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Ioanis+Beige..jpg").open
+    },
+    {
+      name: "Marquina Black",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Marquina+Black..jpg").open
+    },
+    {
+      name: "Michaelangelo",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Michaelangelo..png").open
+    },
+    {
+      name: "Pelagonia",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Pelagonia..jpg").open
+    },
+    {
+      name: "Persus",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Persus..jpg").open
+    },
+    {
+      name: "Rafaelo",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Rafaelo..jpg").open
+    },
+    {
+      name: "Rhino White",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Rhino+White..png").open
+    },
+    {
+      name: "Siberian White",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Siberian+White..png").open
+    },
+    {
+      name: "Sky Fume",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Sky+Fume..png").open
+    },
+    {
+      name: "Spanish Gray",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Spanish+Gray..png").open
+    },
+    {
+      name: "Statuaretto",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Statuaretto..png").open
+    },
+    {
+      name: "Statuary",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Statuary.+.png").open
+    },
+    {
+      name: "Sunny Rose",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Sunny+Rose..jpg").open
+    },
+    {
+      name: "Thassos",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Thassos..jpg").open
+    },
+    {
+      name: "Troia Cappucino",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Troia+Cappucino..png").open
+    },
+    {
+      name: "Tundra Beige",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Tundra+Beige..png").open
+    },
+    {
+      name: "Tundra Grey",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Tundra+Grey..png").open
+    },
+    {
+      name: "Verde Green",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Verde+Green..jpg").open
+    },
+    {
+      name: "Veria Green",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Veria+Green..jpg").open
+    },
+    {
+      name: "Volakas",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Volakas..jpg").open
+    },
+    {
+      name: "White Cararra",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/White+Cararra..png").open
+    },
+    {
+      name: "White Ibiza",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/White+Ibiza..png").open
+    },
+    {
+      name: "White Macauba",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'marble',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/White+Macauba..png").open
+    },
+    {
+      name: "Afghan Green Onyx",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'onyx',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Onyx+Pic/Afghan+Green+Onyx.jpg").open
+    },
+    {
+      name: "Black Onyx",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'onyx',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Onyx+Pic/Black+onyx+.jpg").open
+    },
+    {
+      name: "Dark Green Onyx",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'onyx',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Onyx+Pic/Dark+Green+Onyx.jpg").open
+    },
+    {
+      name: "Onyx Bianco",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'onyx',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Onyx+Pic/Onyx+Bianco+.jpg").open
+    },
+    {
+      name: "Multired Onyx",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'onyx',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Onyx+Pic/multi+red+onyx+.jpg").open
+    },
+    {
+      name: "Onyx Bianco Red",
+      description: "",
+      item_type: 'natural',
+      item_sub_type: 'onyx',
+      image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Onyx+Pic/onyx+bianco+red+.jpg").open
+    }])
+
 Image.destroy_all
 
 green_agate = Rock.find_by(name: "Green Agate");
