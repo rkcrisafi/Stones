@@ -2,7 +2,7 @@ import React from 'react';
 
 const TechSpecs = () => {
   return (
-    <div style={{ 'height': '100%', width: '100%'}}>
+    <div className="tech-spec">
       <embed
         src="https://s3.amazonaws.com/collectivestone-pro/Gemstone+sharp+image-Tracy/Agate/Tech+Specs/Techical+Specs.docx.pdf"
         width="100%"
