@@ -25,10 +25,15 @@
     "lib": "lib",
     "test": "test"
   },
+  "engines": {
+    "node": "8.6.0",
+    "npm": "5.6.x"
+  },
   "scripts": {
     "test": "jest",
     "start": "webpack --watch",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
