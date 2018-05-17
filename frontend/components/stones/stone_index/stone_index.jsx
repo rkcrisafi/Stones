@@ -32,15 +32,16 @@ class StoneIndex extends React.Component {
 
   render () {
     const { imgCount, imgsLoaded } = this.state;
+    const { totalRockCount, curPageRockCount, hasSubType, rocks } = this.props;
     return (
       <div className="stone-index">
-        <PagesNavBarContainer rockCount={ this.props.totalRockCount }/>
-        { imgCount === imgsLoaded && this.props.curPageRockCount ? null :
+        <PagesNavBarContainer rockCount={ totalRockCount }/>
+        { imgCount === imgsLoaded && curPageRockCount ? null :
             <Loader />
         }
         <ol className="stone-index-list">
-          { this.props.rocks.map((rock, id) => {
-            return <StoneItem onLoaded={ () => this.setState({ imgsLoaded: imgsLoaded + 1 }) } visible={ imgCount === imgsLoaded } key={ id } rock={ rock }/>;
+          { rocks.map((rock, id) => {
+            return <StoneItem hasSubType={ hasSubType } onLoaded={ () => this.setState({ imgsLoaded: imgsLoaded + 1 }) } visible={ imgCount === imgsLoaded } key={ id } rock={ rock }/>;
           })}
         </ol>
       </div>

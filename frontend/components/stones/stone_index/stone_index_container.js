@@ -5,13 +5,16 @@ import StoneIndex from './stone_index';
 
 const mapStateToProps = (state, ownProps) => {
   let itemType;
-  const pathname = ownProps.location.pathname;
+  const { search, pathname } = ownProps.location;
+
   if (pathname.indexOf('/gemstones') === 0) {
     itemType = 'gem';
   } else if (pathname.indexOf('/naturalstones') === 0) {
     itemType = 'natural';
   }
-  
+
+  const subTypeMatch = search.match(/sub-type=([^?&]+)/);
+
   const rocks = Object.keys(state.rocks.rocks).map(id => state.rocks.rocks[id]);
   return {
     pageSearch: ownProps.location.search,
@@ -19,6 +22,7 @@ const mapStateToProps = (state, ownProps) => {
     itemType,
     totalRockCount: state.rocks.rockCount,
     curPageRockCount: rocks.length,
+    hasSubType: Boolean(subTypeMatch),
   };
 };
 
