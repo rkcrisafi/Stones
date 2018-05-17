@@ -20,6 +20,7 @@ const App = (props) => {
       <AuthRoute path='/signup' component={ SessionFormContainer } />
       <Route exact path='/' component={ LandingPageContainer } />
       <Route exact path='/gemstones' component={ StoneIndexContainer } />
+      <Route path='/naturalstones' component={ StoneIndexContainer } />
       <Route exact path='/gemstones/:rockId' component={ StoneShowContainer } />
       <Route exact path='/contact-us' component={ ContactUsForm } />
       <Route exact path='/contact-us/:rockId' component={ ContactUsForm } />

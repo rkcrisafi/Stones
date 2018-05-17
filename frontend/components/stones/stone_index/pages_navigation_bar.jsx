@@ -17,13 +17,16 @@ const pageRange = (cur, total) => {
 class PagesNavBar extends React.Component {
 
   render () {
-    const { rockCount, pageNum, clearImages } = this.props;
+    const { rockCount, pageNum, clearImages, pathname, subType } = this.props;
     let pageCount = Math.ceil(this.props.rockCount / 20 );
+    let subTypeStr = (subType ? `?sub-type=${subType}` : "");
+    let pageQueryStart = (subTypeStr === "" ? "?page=" : "&page=");
+    // console.log(`${pathname}${subTypeStr}${pageQueryStart}${pageNum-1}`);
     let currentPages = pageRange(pageNum, pageCount).map(page => {
       return (
         pageNum === page ?
         <div key={ page } className="page-number selected-page">{ page }</div> :
-        <Link to={ `/gemstones?page=${page}` } key={ page } className="page-number">{ page }</Link>
+        <Link to={ `${pathname}${subTypeStr}${pageQueryStart}${page}` } key={ page } className="page-number">{ page }</Link>
       );
     });
     return (
@@ -33,13 +36,13 @@ class PagesNavBar extends React.Component {
           <div className="current-page">{ pageNum + " of " + pageCount }</div>
           <div className="page-navigation-bar">
             { pageNum === 1 ? <div className="page-nav-arrow"><div className="arrow faded">{'<'}</div></div> :
-              <Link to={`/gemstones?page=${pageNum-1}`} className="page-nav-arrow"><div className="arrow">{'<'}</div></Link>
+              <Link to={`${pathname}${subTypeStr}${pageQueryStart}${pageNum-1}`} className="page-nav-arrow"><div className="arrow">{'<'}</div></Link>
             }
 
             <div className="page-range">{ currentPages }</div>
 
             { pageNum === pageCount ? <div className="page-nav-arrow"><div className="arrow faded">{'>'}</div></div> :
-              <Link to={`/gemstones?page=${pageNum+1}`} className="page-nav-arrow"><div className="arrow">{'>'}</div></Link>
+              <Link to={`${pathname}${subTypeStr}${pageQueryStart}${pageNum+1}`} className="page-nav-arrow"><div className="arrow">{'>'}</div></Link>
             }
           </div>
         </div>
@@ -51,11 +54,19 @@ class PagesNavBar extends React.Component {
 
 const mapStateToProps = (state, ownProps) => {
   const { search } = ownProps.location;
-  const pageNum = (search === "" ? "1" : search.match(/page=(\d+)/)[1]);
-  return {
+  const pageMatch = search.match(/page=(\d+)/);
+  const subTypeMatch = search.match(/sub-type=([^?&]+)/);
+  const pageNum = (!pageMatch ? "1" : pageMatch[1]);
+  const subType = (!subTypeMatch ? null : subTypeMatch[1]);
+
+  const pathname = ownProps.location.pathname;
+  let obj =  {
     pageNum: Number(pageNum),
+    subType,
     rockCount: ownProps.rockCount,
+    pathname,
   };
+  return obj;
 };
 
 const mapDispatchToProps = null;

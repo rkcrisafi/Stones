@@ -19,9 +19,11 @@ class StoneIndex extends React.Component {
 
   componentWillReceiveProps(newProps) {
     if (newProps.pageSearch !== this.props.pageSearch) {
+      this.props.clearRocks();
       this.props.fetchRocks(newProps.pageSearch, newProps.itemType);
     }
     // debugger
+    console.log(newProps);
     if (newProps.curPageRockCount !== this.props.curPageRockCount) {
       this.setState({ imgCount: newProps.curPageRockCount, imgsLoaded: 0 });
     }

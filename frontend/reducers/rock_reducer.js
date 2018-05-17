@@ -1,6 +1,7 @@
 import { RECEIVE_ROCKS, RECEIVE_ROCK, CLEAR_ROCKS } from '../actions/rock_actions';
 
 const RockReducer = (state = { rocks: {}, rockCount: null }, action) => {
+
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_ROCKS:
