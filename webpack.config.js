@@ -40,6 +40,6 @@ module.exports = {
       }
     ]
   },
-  devtool: 'source-map',
+  // devtool: 'source-map',
 };
 // webpack - transpiles code from jsx to js,.....
