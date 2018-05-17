@@ -13,11 +13,6 @@
   grid-gap: 1em 1.5em;
 }
 
-.stone-index-item-image {
-  max-width: 15.625em;
-  min-width: 15.625em;
-  overflow: hidden;
-}
 
 @media screen and (max-width: 84.125em) and (min-width: 67em) {
   .stone-index {
@@ -64,6 +59,11 @@
 //   height: 20vw;
 // }
 
+.stone-index-item-image {
+  max-width: 15.625em;
+  min-width: 15.625em;
+  overflow: hidden;
+}
 
 .stone-index-item-image img {
   height: 15.625em;

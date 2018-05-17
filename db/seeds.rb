@@ -510,7 +510,7 @@ Rock.create!([{
       image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Marble+Pic/Gray+Emperador..png").open
     },
     {
-      name: "Ionis Beige",
+      name: "Ioanis Beige",
       description: "",
       item_type: 'natural',
       item_sub_type: 'marble',
