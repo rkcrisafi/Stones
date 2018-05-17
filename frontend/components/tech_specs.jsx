@@ -5,6 +5,7 @@ const TechSpecs = (props) => {
   //webpack isn't updating
   return (
     <div className="tech-spec webpackisntupdatingthispageplzwork">
+      <div>hi</div>
       <embed
         src="https://s3.amazonaws.com/collectivestone-pro/Techical+Specs+PDF.pdf"
         width="100%"
