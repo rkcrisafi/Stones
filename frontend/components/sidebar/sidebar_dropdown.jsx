@@ -23,8 +23,9 @@ class SidebarDropDown extends React.Component {
         <div className="sidebar-link" onClick={() => this.setState({ isDown: !isDown })}>{ text }</div>
           { !isDown ? null : (
             <div className="sidebar-dropdown-links">
-              { subTypes.map(subType => (
+              { subTypes.map((subType, i) => (
                 <Link
+                  key={ i }
                   onClick={ e => this.handleClick(e, `${path}?sub-type=${subType}`, location) }
                   to={ `${path}?sub-type=${subType}` }
                   className={`${location.search.includes(`?sub-type=${subType}`) ? 'highlighted' : ''}`}
