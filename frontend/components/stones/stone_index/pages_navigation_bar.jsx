@@ -20,13 +20,13 @@ class PagesNavBar extends React.Component {
     const { rockCount, pageNum, clearImages, pathname, subType } = this.props;
     let pageCount = Math.ceil(this.props.rockCount / 20 );
     let subTypeStr = (subType ? `?sub-type=${subType}` : "");
-    let pageQueryStart = (subTypeStr === "" ? "?page=" : "&page=");
+    let pageQueryStart = (subTypeStr === "" ? "?" : "&");
 
     let currentPages = pageRange(pageNum, pageCount).map(page => {
       return (
         pageNum === page ?
         <div key={ page } className="page-number selected-page">{ page }</div> :
-        <Link to={ `${pathname}${subTypeStr}${pageQueryStart}${page}` } key={ page } className="page-number">{ page }</Link>
+        <Link to={ `${pathname}${subTypeStr}${pageQueryStart}page=${page}` } key={ page } className="page-number">{ page }</Link>
       );
     });
     return (
@@ -36,13 +36,13 @@ class PagesNavBar extends React.Component {
           <div className="current-page">{ pageNum + " of " + pageCount }</div>
           <div className="page-navigation-bar">
             { pageNum === 1 ? <div className="page-nav-arrow"><div className="arrow faded">{'<'}</div></div> :
-              <Link to={`${pathname}${subTypeStr}${pageQueryStart}${pageNum-1}`} className="page-nav-arrow"><div className="arrow">{'<'}</div></Link>
+              <Link to={`${pathname}${subTypeStr}${pageQueryStart}page=${pageNum-1}`} className="page-nav-arrow"><div className="arrow">{'<'}</div></Link>
             }
 
             <div className="page-range">{ currentPages }</div>
 
             { pageNum === pageCount ? <div className="page-nav-arrow"><div className="arrow faded">{'>'}</div></div> :
-              <Link to={`${pathname}${subTypeStr}${pageQueryStart}${pageNum+1}`} className="page-nav-arrow"><div className="arrow">{'>'}</div></Link>
+              <Link to={`${pathname}${subTypeStr}${pageQueryStart}page=${pageNum+1}`} className="page-nav-arrow"><div className="arrow">{'>'}</div></Link>
             }
           </div>
         </div>
