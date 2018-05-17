@@ -18,14 +18,15 @@ class StoneIndex extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    if (newProps.pageSearch !== this.props.pageSearch) {
-      this.props.clearRocks();
-      this.props.fetchRocks(newProps.pageSearch, newProps.itemType);
+    const { pageSearch, clearRocks, fetchRocks, itemType, receiveSidebarState, curPageRockCount } = newProps;
+    if (pageSearch !== this.props.pageSearch) {
+      clearRocks();
+      fetchRocks(pageSearch, itemType);
+      receiveSidebarState(false);
     }
-    // debugger
-    console.log(newProps);
-    if (newProps.curPageRockCount !== this.props.curPageRockCount) {
-      this.setState({ imgCount: newProps.curPageRockCount, imgsLoaded: 0 });
+
+    if (curPageRockCount !== this.props.curPageRockCount) {
+      this.setState({ imgCount: curPageRockCount, imgsLoaded: 0 });
     }
   }
 

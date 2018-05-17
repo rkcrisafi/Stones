@@ -36,7 +36,7 @@ const Sidebar = ({ location, sidebar, receiveSidebarState }) => {
             location={ location }
             subTypes={ ['marble', 'granite', 'onyx'] } />
 
-          <li>
+          {/*<li>
             <Link
               to="/shellstones"
               onClick={(e) => handleClick(e, '/shellstones')}
@@ -70,7 +70,7 @@ const Sidebar = ({ location, sidebar, receiveSidebarState }) => {
               className={`${location.pathname === '/projects' ? 'highlighted' : ''}`}>
               Projects
             </Link>
-          </li>
+          </li>*/}
 
           <li className="sidebar-contact-us-link">
             <Link

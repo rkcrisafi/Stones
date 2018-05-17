@@ -21,7 +21,7 @@ class PagesNavBar extends React.Component {
     let pageCount = Math.ceil(this.props.rockCount / 20 );
     let subTypeStr = (subType ? `?sub-type=${subType}` : "");
     let pageQueryStart = (subTypeStr === "" ? "?page=" : "&page=");
-    // console.log(`${pathname}${subTypeStr}${pageQueryStart}${pageNum-1}`);
+
     let currentPages = pageRange(pageNum, pageCount).map(page => {
       return (
         pageNum === page ?
