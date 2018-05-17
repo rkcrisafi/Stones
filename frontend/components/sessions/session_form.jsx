@@ -17,7 +17,7 @@ class SessionForm extends React.Component {
   }
 
   handleSubmit(e) {
-    // e.preventDefault();
+    e.preventDefault();
     const { email, password, confirmedPassword } = this.state;
     const { formType, sessionAction, receiveErrors } = this.props;
     if (formType === "signup" && password !== confirmedPassword) {

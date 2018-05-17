@@ -10,10 +10,10 @@ Bundler.require(*Rails.groups)
 module Stones
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    # config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
-    # config.assets.paths << Rails.root.join("app", "assets", "fonts")
-    # config.assets.enabled = true
-    # config.assets.digest = true
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.assets.enabled = true
+    config.assets.digest = true
     config.load_defaults 5.1
     config.paperclip_defaults = {
       :storage => :s3,
