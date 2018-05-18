@@ -1,13 +1,7 @@
 var path = require('path');
 var webpack = require("webpack");
 var plugins = []; // if using any plugins for both dev and production
-var devPlugins = [
-  new webpack.DefinePlugin({
-    'process.env': {
-      'NODE_ENV': JSON.stringify('development')
-    }
-  })
-]; // if using any plugins for development
+var devPlugins = []; // if using any plugins for development
 var prodPlugins = [
   new webpack.DefinePlugin({
     'process.env': {
@@ -21,7 +15,7 @@ var prodPlugins = [
   })
 ];
 plugins = plugins.concat(
-  process.env.NODE_ENV === 'development' ? devPlugins : prodPlugins
+  process.env.NODE_ENV === 'production' ? prodPlugins : devPlugins
 );
 module.exports = {
   context: __dirname,
