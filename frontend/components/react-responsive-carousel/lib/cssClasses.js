@@ -27,11 +27,12 @@ exports.default = {
         });
     },
 
-    SLIDER: function SLIDER(isSlider, isSwiping) {
+    SLIDER: function SLIDER(isSlider, isSwiping, onFirstImg) {
         return (0, _classnames2.default)({
             "thumbs": !isSlider,
             "slider": isSlider,
-            "animated": !isSwiping
+            "animated": !isSwiping,
+            "first-img-selected": onFirstImg,
         });
     },
 

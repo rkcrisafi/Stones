@@ -572,7 +572,7 @@ var Carousel = function (_Component) {
 
             var swiperProps = {
                 selectedItem: this.state.selectedItem,
-                className: _cssClasses2.default.SLIDER(true, this.state.swiping),
+                className: _cssClasses2.default.SLIDER(true, this.state.swiping, this.state.selectedItem === 0),
                 onSwipeMove: this.onSwipeMove,
                 onSwipeStart: this.onSwipeStart,
                 onSwipeEnd: this.onSwipeEnd,

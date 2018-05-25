@@ -235,3 +235,12 @@
     color: #fff; }
   .carousel:hover .slide .legend {
     opacity: 1; }
+
+
+.first-img-selected {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
