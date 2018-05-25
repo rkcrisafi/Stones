@@ -21,7 +21,7 @@ class LandingPage extends React.Component {
           stopOnHover={ false }
           showIndicators={ false }
           swipeable={ true }
-          infiniteLoop={ false }
+          infiniteLoop={ true }
           autoPlay={ true }
           emulateTouch={ true }
           showStatus={ false }
