@@ -1,0 +1,1197 @@
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/about-us.scss */
+.about-us-body {
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+}
+
+/* line 8, /Users/benblue/Desktop/Stones/app/assets/stylesheets/about-us.scss */
+.about-us-title {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 20px auto;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: inherit;
+}
+
+/* line 17, /Users/benblue/Desktop/Stones/app/assets/stylesheets/about-us.scss */
+.paragraph {
+  color: #3b4e47;
+  margin: 5px 20px;
+  color: inherit;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+/* line 29, /Users/benblue/Desktop/Stones/app/assets/stylesheets/about-us.scss */
+.about-us-image-container {
+  width: 45%;
+  min-width: 450px;
+  margin: 10px 20px 10px 10px;
+  float: left;
+}
+
+/* line 38, /Users/benblue/Desktop/Stones/app/assets/stylesheets/about-us.scss */
+.about-us-image-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 860px) {
+  /* line 43, /Users/benblue/Desktop/Stones/app/assets/stylesheets/about-us.scss */
+  .image-p2-p3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* line 50, /Users/benblue/Desktop/Stones/app/assets/stylesheets/about-us.scss */
+  .about-us-image-container {
+    width: 90%;
+    min-width: 90%;
+  }
+}
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.contact-us-content {
+  max-width: 800px;
+  min-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+/* line 9, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.contact-us-header {
+  text-align: center;
+  margin: 30px;
+}
+
+/* line 14, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.contact-us-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* line 20, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.contact-us-info div {
+  color: #3b4e47;
+}
+
+/* line 24, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.contact-us-info a {
+  margin-left: 5px;
+}
+
+/* line 28, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.contact-us-header p {
+  color: #3b4e47;
+  text-align: right;
+}
+
+/* line 33, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.contact-us-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px;
+  color: #3b4e47;
+  text-transform: uppercase;
+}
+
+/* line 42, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.contact-us-content a {
+  text-decoration: underline;
+  color: #0f48AA;
+}
+
+/* line 47, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+:root {
+  --padding: 15px;
+}
+
+/* line 51, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.input input {
+  width: 100%;
+  margin: 7px 0;
+  height: 35px;
+  font-size: 15px;
+  border: 1px solid #dadada;
+  padding-left: var(--padding);
+  border-radius: 4px;
+}
+
+/* line 61, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.input textarea {
+  resize: none;
+  width: calc(100% - var(--padding));
+  height: 120px;
+  padding: var(--padding);
+  margin: 10px auto;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+/* line 73, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.input ::placeholder {
+  color: #dadada;
+}
+
+/* line 77, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.contact-us-submit input {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 44px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: #3b4e47;
+}
+
+/* line 88, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.contact-us-submit input:hover {
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+/* line 93, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.carousel .thumbs-wrapper .control-next.control-arrow:before {
+  border-left: 8px solid #000 !important;
+  right: -5px;
+}
+
+/* line 97, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.carousel .thumbs-wrapper .control-prev.control-arrow:before {
+  border-right: 8px solid #000 !important;
+}
+
+/* line 102, /Users/benblue/Desktop/Stones/app/assets/stylesheets/contact_us.scss */
+.thumbs-wrapper button.control-next.control-arrow {
+  right: -5px;
+}
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/footer.scss */
+.footer-container {
+  width: 100%;
+  height: 50px;
+  background: white;
+  color: black;
+  z-index: 10;
+  -webkit-box-shadow: 0 -0.5px 0.5px 0px #bbb;
+  -moz-box-shadow: 0 -0.5px 0.5px 0px #bbb;
+  box-shadow: 0 -0.5px 0.5px 0px #bbb;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 19, /Users/benblue/Desktop/Stones/app/assets/stylesheets/footer.scss */
+.footer-social-media-links svg {
+  font-size: 25px;
+  color: #3b4e47;
+}
+
+/* line 24, /Users/benblue/Desktop/Stones/app/assets/stylesheets/footer.scss */
+.footer-social-media-links a {
+  margin-right: 10px;
+}
+
+/* line 28, /Users/benblue/Desktop/Stones/app/assets/stylesheets/footer.scss */
+.footer-social-media-links a:last-child {
+  margin-right: 20px;
+}
+/* line 5, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.app {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Roboto", helvetica, sans-serif;
+}
+
+/* line 11, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.loader {
+  border: 5px solid #f3f3f3;
+  /* Light grey */
+  border-top: 5px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 2s linear infinite;
+}
+
+/* line 23, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner {
+  font-size: 48px;
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+/* line 29, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 150px;
+  margin: auto;
+}
+/* line 37, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade {
+  position: absolute;
+  left: .4629em;
+  bottom: 0;
+  width: .074em;
+  height: .2777em;
+  border-radius: .0555em;
+  background-color: transparent;
+  transform-origin: center -.2222em;
+  animation: spinner-fade 1s infinite linear;
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(1) {
+  animation-delay: 0s;
+  transform: rotate(0deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(2) {
+  animation-delay: 0.083s;
+  transform: rotate(30deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(3) {
+  animation-delay: 0.166s;
+  transform: rotate(60deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(4) {
+  animation-delay: 0.249s;
+  transform: rotate(90deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(5) {
+  animation-delay: 0.332s;
+  transform: rotate(120deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(6) {
+  animation-delay: 0.415s;
+  transform: rotate(150deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(7) {
+  animation-delay: 0.498s;
+  transform: rotate(180deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(8) {
+  animation-delay: 0.581s;
+  transform: rotate(210deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(9) {
+  animation-delay: 0.664s;
+  transform: rotate(240deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(10) {
+  animation-delay: 0.747s;
+  transform: rotate(270deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(11) {
+  animation-delay: 0.83s;
+  transform: rotate(300deg);
+}
+/* line 53, /Users/benblue/Desktop/Stones/app/assets/stylesheets/general.scss */
+.spinner.center .spinner-blade:nth-child(12) {
+  animation-delay: 0.913s;
+  transform: rotate(330deg);
+}
+
+@keyframes spinner-fade {
+  0% {
+    background-color: #69717d;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+/********************************************
+	BREAKPOINT WIDTHS
+********************************************/
+/********************************************
+	FONTS
+********************************************/
+/********************************************
+	COLOURS
+********************************************/
+/* line 13, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  position: absolute;
+  z-index: 7;
+  top: 20px;
+  background: none;
+  border: 0;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* line 28, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-arrow:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 31, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+  margin: 0 5px;
+  display: inline-block;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  content: '';
+}
+
+/* line 37, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-disabled.control-arrow {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: inherit;
+  display: none;
+}
+
+/* line 42, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-prev.control-arrow {
+  left: 0;
+}
+
+/* line 44, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #fff;
+}
+
+/* line 46, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-next.control-arrow {
+  right: 0;
+}
+
+/* line 48, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #fff;
+}
+
+/* line 51, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+/* line 54, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 58, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel button {
+  outline: 0;
+  border: 0;
+  background: none;
+}
+
+/* line 62, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel img {
+  width: 100%;
+  display: inline-block;
+  pointer-events: none;
+}
+
+/* line 66, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .carousel {
+  position: relative;
+}
+
+/* line 68, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-arrow {
+  top: 50%;
+  margin-top: -13px;
+  font-size: 18px;
+}
+
+/* line 72, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .thumbs-wrapper {
+  margin: 20px;
+  overflow: hidden;
+}
+
+/* line 75, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .thumbs {
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  -ms-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  list-style: none;
+  white-space: nowrap;
+}
+
+/* line 89, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .thumb {
+  -webkit-transition: border 0.15s ease-in;
+  -moz-transition: border 0.15s ease-in;
+  -ms-transition: border 0.15s ease-in;
+  -o-transition: border 0.15s ease-in;
+  transition: border 0.15s ease-in;
+  display: inline-block;
+  width: 80px;
+  margin-right: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 3px solid #fff;
+  padding: 2px;
+}
+
+/* line 102, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .thumb.selected, .carousel .thumb:hover {
+  border: 3px solid #333;
+  padding: 2px;
+}
+
+/* line 105, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .thumb img {
+  vertical-align: top;
+}
+
+/* line 107, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel.carousel-slider {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* line 111, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel.carousel-slider .control-arrow {
+  top: 0;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+}
+
+/* line 118, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel.carousel-slider .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 120, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slider-wrapper {
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  -webkit-transition: height 0.15s ease-in;
+  -moz-transition: height 0.15s ease-in;
+  -ms-transition: height 0.15s ease-in;
+  -o-transition: height 0.15s ease-in;
+  transition: height 0.15s ease-in;
+}
+
+/* line 129, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slider-wrapper.axis-horizontal .slider {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 137, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  flex-direction: column;
+  flex-flow: column;
+}
+
+/* line 140, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slider-wrapper.axis-vertical {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 148, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slider-wrapper.axis-vertical .slider {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 151, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slider {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  width: 100%;
+}
+
+/* line 157, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slider.animated {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 163, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slide {
+  min-width: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  background: #000;
+}
+
+/* line 169, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slide img {
+  width: 100%;
+  vertical-align: top;
+  border: 0;
+}
+
+/* line 173, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slide iframe {
+  display: inline-block;
+  width: calc(100% - 80px);
+  margin: 0 40px 40px;
+  border: 0;
+}
+
+/* line 178, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .slide .legend {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -45%;
+  width: 90%;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.25;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -ms-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* line 201, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-dots {
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  /* line 208, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+  .carousel .control-dots {
+    bottom: 0;
+  }
+}
+/* line 210, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-dots .dot {
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -ms-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  background: #fff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+/* line 226, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 229, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel .carousel-status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+/* line 237, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.carousel:hover .slide .legend {
+  opacity: 1;
+}
+
+/* line 241, /Users/benblue/Desktop/Stones/app/assets/stylesheets/image-carousel.scss */
+.first-img-selected {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/landing-page.scss */
+.landing-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 9, /Users/benblue/Desktop/Stones/app/assets/stylesheets/landing-page.scss */
+.landing-page-container .carousel-img {
+  height: 100vh;
+  object-fit: cover;
+}
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/navbar.scss */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 65px;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 6px -5px #999;
+  -moz-box-shadow: 0 4px 6px -5px #999;
+  box-shadow: 0 4px 6px -5px #999;
+}
+
+/* line 16, /Users/benblue/Desktop/Stones/app/assets/stylesheets/navbar.scss */
+.logo-container {
+  width: 100px;
+  padding: 10px 0;
+}
+
+/* line 21, /Users/benblue/Desktop/Stones/app/assets/stylesheets/navbar.scss */
+.logo-container img {
+  width: 100%;
+}
+
+/* line 25, /Users/benblue/Desktop/Stones/app/assets/stylesheets/navbar.scss */
+.hamburger {
+  cursor: pointer;
+}
+
+/* line 29, /Users/benblue/Desktop/Stones/app/assets/stylesheets/navbar.scss */
+.navbar .icon {
+  margin: 0 20px;
+  font-size: 20px;
+  color: #3b4e47;
+}
+
+/* line 35, /Users/benblue/Desktop/Stones/app/assets/stylesheets/navbar.scss */
+.under-navbar {
+  width: 100%;
+  height: 65px;
+}
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/pagination-nav-bar.scss */
+.pagination-bar, .page-navigation-bar, .page-range, .current-page-and-nav {
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+/* line 7, /Users/benblue/Desktop/Stones/app/assets/stylesheets/pagination-nav-bar.scss */
+.pagination-bar {
+  justify-content: space-between;
+  max-width: 84.125em;
+  color: #3b4e47;
+  padding: 10px 0;
+}
+
+/* line 14, /Users/benblue/Desktop/Stones/app/assets/stylesheets/pagination-nav-bar.scss */
+.selected-page.page-number {
+  font-weight: 400;
+  color: inherit;
+}
+
+/* line 19, /Users/benblue/Desktop/Stones/app/assets/stylesheets/pagination-nav-bar.scss */
+.faded {
+  color: #aaaaaa;
+}
+
+/* line 23, /Users/benblue/Desktop/Stones/app/assets/stylesheets/pagination-nav-bar.scss */
+.current-page-and-nav {
+  color: inherit;
+}
+
+/* line 27, /Users/benblue/Desktop/Stones/app/assets/stylesheets/pagination-nav-bar.scss */
+.item-count {
+  font-weight: 300;
+  font-size: 14px;
+  color: inherit;
+}
+
+/* line 33, /Users/benblue/Desktop/Stones/app/assets/stylesheets/pagination-nav-bar.scss */
+.current-page {
+  color: inherit;
+  margin-right: 20px;
+}
+
+/* line 38, /Users/benblue/Desktop/Stones/app/assets/stylesheets/pagination-nav-bar.scss */
+.page-nav-arrow {
+  color: inherit;
+  padding: 0 5px;
+  font-size: 12px;
+}
+
+/* line 44, /Users/benblue/Desktop/Stones/app/assets/stylesheets/pagination-nav-bar.scss */
+.arrow {
+  transform: scale(0.7, 1.5);
+  -webkit-transform: scale(0.7, 1.5);
+  /* Safari and Chrome */
+  -moz-transform: scale(0.7, 1.5);
+  /* Firefox */
+  -ms-transform: scale(0.7, 1.5);
+  /* IE 9+ */
+  -o-transform: scale(0.7, 1.5);
+  /* Opera */
+}
+
+/* line 52, /Users/benblue/Desktop/Stones/app/assets/stylesheets/pagination-nav-bar.scss */
+.page-number {
+  color: inherit;
+  padding: 0 2px;
+  font-weight: 300;
+}
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: black;
+}
+
+/* remember to define focus styles! */
+/* line 21, /Users/benblue/Desktop/Stones/app/assets/stylesheets/reset.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 24, /Users/benblue/Desktop/Stones/app/assets/stylesheets/reset.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+  width: 100%;
+}
+
+/* line 30, /Users/benblue/Desktop/Stones/app/assets/stylesheets/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+/* line 34, /Users/benblue/Desktop/Stones/app/assets/stylesheets/reset.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 38, /Users/benblue/Desktop/Stones/app/assets/stylesheets/reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 42, /Users/benblue/Desktop/Stones/app/assets/stylesheets/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+/* line 46, /Users/benblue/Desktop/Stones/app/assets/stylesheets/reset.scss */
+blockquote, q {
+  quotes: "" "";
+}
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.sidebar-container {
+  font-weight: 300;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  z-index: 2000;
+  transition: transform .25s;
+  transform: translate(-300px, 0);
+}
+
+/* line 14, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.sidebar-container.visible {
+  transform: translate(0, 0);
+}
+
+/* line 18, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.sidebar-overlay {
+  position: fixed;
+  left: 0;
+  top: -50vh;
+  width: 100vw;
+  height: 200vh;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity .5s, z-index 0s .5s;
+  z-index: -10;
+}
+
+/* line 30, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.sidebar-overlay.visible {
+  transition: opacity .5s, z-index 0s 0s;
+  z-index: 1500;
+  opacity: 0.5;
+}
+
+/* line 36, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.sidebar-container .icon {
+  margin: 20px;
+  font-size: 20px;
+  color: #3b4e47;
+}
+
+/* line 42, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.sidebar-links {
+  margin-top: 20px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 49, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.sidebar-links li {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 55, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.sidebar-links a:hover, .sidebar-links .sidebar-link:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* line 60, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.highlighted {
+  color: red;
+}
+
+/* line 64, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+li.sidebar-contact-us-link {
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+/* line 69, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+li.sidebar-dropdown-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/* line 76, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.sidebar-dropdown-links {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 0 25px;
+}
+
+/* line 82, /Users/benblue/Desktop/Stones/app/assets/stylesheets/sidebar.scss */
+.sidebar-dropdown-links a {
+  margin-top: 8px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+.stone-index {
+  text-align: center;
+  margin: auto;
+  max-width: 84.125em;
+  min-width: 28.125em;
+  padding-bottom: 70px;
+}
+
+/* line 9, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+.stone-index-list {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em 1.5em;
+}
+
+/*leave stone-index-item-image here so it gets over written by media queries*/
+/* line 17, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+.stone-index-item-image {
+  max-width: 15.625em;
+  min-width: 15.625em;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 84.125em) and (min-width: 67em) {
+  /* line 24, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+  .stone-index {
+    width: 67em;
+  }
+
+  /* line 27, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+  .stone-index-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 48.25em) and (max-width: 66.938em) {
+  /* line 33, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+  .stone-index {
+    width: 48.250em;
+  }
+
+  /* line 36, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+  .stone-index-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* line 40, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+  .stone-index-item-image {
+    max-width: 10.938em;
+    min-width: 10.938em;
+    overflow: hidden;
+    height: 10.938em;
+  }
+
+  /* line 47, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+  .stone-index-item-image img {
+    height: 10.938em !important;
+  }
+}
+@media screen and (max-width: 48.188em) {
+  /* line 54, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+  .stone-index {
+    width: 32.750em;
+  }
+
+  /* line 57, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+  .stone-index-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* line 69, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+.stone-index-item-image img {
+  height: 15.625em;
+}
+
+/* line 73, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+.stone-index-item-name {
+  font-weight: 400;
+  text-align: center;
+  padding-top: 0.625em;
+  font-size: 13px;
+  color: #3b4e47;
+  text-transform: uppercase;
+}
+
+/* line 82, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_index.scss */
+.stone-index-item .hide-item {
+  visibility: hidden;
+}
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.stone-show {
+  padding-bottom: 70px;
+}
+
+/* line 5, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.rock-image-description {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 20px;
+  margin: 30px;
+}
+
+/* line 12, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.rock-info {
+  text-align: center;
+  color: #3b4e47;
+}
+
+/* line 17, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.rock-full-description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 24, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.rock-name {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 20px auto;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: inherit;
+}
+
+/* line 33, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.rock-description {
+  width: 80%;
+  margin: 30px auto;
+  color: inherit;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+/* line 47, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.contact-us-rock-id-link, .tech-specifications {
+  display: flex;
+  margin: 10px auto;
+  width: 200px;
+  height: 44px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border-color: #d8d8d8 #d1d1d1 #bababa;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px 7px 2px;
+  color: #3b4e47;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 65, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.contact-us-rock-id-link:hover, .tech-specifications:hover {
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 48.25em) {
+  /* line 71, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+  .rock-image-description {
+    display: block;
+    margin: 30px 60px;
+  }
+
+  /* line 75, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+  .rock-description {
+    width: 80%;
+  }
+
+  /* line 78, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+  .rock-name {
+    margin: 40px auto 20px auto;
+  }
+}
+/* line 83, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.main-img-container {
+  position: relative;
+}
+
+/* line 87, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.little-box {
+  position: absolute;
+  z-index: 5;
+  border: 2px solid white;
+}
+
+/* line 93, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.zoom-img-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 100, /Users/benblue/Desktop/Stones/app/assets/stylesheets/stone_show.scss */
+.zoom-img-container img {
+  position: absolute;
+}
+/* line 1, /Users/benblue/Desktop/Stones/app/assets/stylesheets/tech-spec.scss */
+.tech-spec {
+  height: 85vh;
+  width: 100%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
