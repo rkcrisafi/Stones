@@ -10,6 +10,7 @@ import ContactUsForm from './contact_us';
 import LandingPageContainer from './landing_page/landing_page';
 import Footer from './footer/footer';
 import TechSpecs from './tech_specs';
+import AboutUs from './about_us';
 
 const App = (props) => {
   return (
@@ -19,6 +20,7 @@ const App = (props) => {
       <AuthRoute path='/login' component={ SessionFormContainer } />
       <AuthRoute path='/signup' component={ SessionFormContainer } />
       <Route exact path='/' component={ LandingPageContainer } />
+      <Route exact path='/about-us' component={ AboutUs } />
       <Route exact path='/gemstones' component={ StoneIndexContainer } />
       <Route path='/naturalstones' component={ StoneIndexContainer } />
       <Route exact path='/gemstones/:rockId' component={ StoneShowContainer } />

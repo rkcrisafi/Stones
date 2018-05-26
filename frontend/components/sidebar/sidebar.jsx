@@ -21,6 +21,14 @@ const Sidebar = ({ location, sidebar, receiveSidebarState }) => {
           <i className="fas fa-bars"></i>
         </div>
         <ul className="sidebar-links">
+          <li className="sidebar-about-us-link">
+            <Link
+              to="/about-us"
+              onClick={(e) => handleClick(e, '/about-us')}
+              className={`${location.pathname === '/about-us' ? 'highlighted' : ''}`}>
+              About Us
+            </Link>
+          </li>
           <li>
             <Link
               to="/gemstones"
