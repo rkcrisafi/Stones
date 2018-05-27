@@ -964,7 +964,7 @@ MiscellaneousImage.create([
   },
   {
     item_type: "landing_page",
-    image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page+2/RBlueAgate.png").open
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page+2/Blue+Agate+for+Collective+Stone+by+EV.jpg").open
   },
   {
     item_type: "landing_page",
