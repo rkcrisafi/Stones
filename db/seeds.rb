@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# 
+#
 # Rock.destroy_all
 #
 # Rock.create!([{
@@ -960,23 +960,23 @@ MiscellaneousImage.destroy_all
 MiscellaneousImage.create([
   {
     item_type: "landing_page",
-    image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page/Amethyst+for+Collective+Stone+by+EV.jpg").open
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page+2/Amethyst+for+Collective+Stone+by+EV.jpg").open
   },
   {
     item_type: "landing_page",
-    image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page/RBlueAgate.png").open
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page+2/RBlueAgate.png").open
   },
   {
     item_type: "landing_page",
-    image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page/landing_stones.png").open
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page+2/Landing+Gems.png").open
   },
   {
     item_type: "landing_page",
     image:
-   URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page/Fluorite+for+Collective+Stone+by+EV.jpg").open
+   URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page+2/Flourite+for+Collective+Stone+by+EV.jpg").open
   },
   {
     item_type: "landing_page",
-    image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page/Landing+Blue+Agate.jpg").open
+    image: URI.parse("https://s3.amazonaws.com/collectivestone-pro/Landing+Page+2/Landing+Blue+Agate.jpg").open
   }
 ])
